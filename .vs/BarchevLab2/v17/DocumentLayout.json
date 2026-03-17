@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\VS project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VS project\\VS project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VS project\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\VS project.vcxproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VS project\\VS project.vcxproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\VS project.vcxproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VS project\\VS project.vcxproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,66 +47,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-15T13:43:16.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-15T13:43:15.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VS project.cpp",
-              "DocumentMoniker": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\VS project.cpp",
-              "RelativeDocumentMoniker": "VS project\\VS project.cpp",
-              "ToolTip": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\VS project.cpp",
-              "RelativeToolTip": "VS project\\VS project.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-15T13:43:05.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "VS project.vcxproj",
               "DocumentMoniker": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\VS project.vcxproj",
               "RelativeDocumentMoniker": "VS project\\VS project.vcxproj",
               "ToolTip": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\VS project.vcxproj",
               "RelativeToolTip": "VS project\\VS project.vcxproj",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAIEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000698|",
-              "WhenOpened": "2026-03-15T13:43:02.488Z",
+              "WhenOpened": "2026-03-17T18:28:25.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VS project.vcxproj.user",
-              "DocumentMoniker": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\VS project.vcxproj.user",
-              "RelativeDocumentMoniker": "VS project\\VS project.vcxproj.user",
-              "ToolTip": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\VS project.vcxproj.user",
-              "RelativeToolTip": "VS project\\VS project.vcxproj.user",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2026-03-15T13:42:59.302Z",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\Main.cpp",
+              "RelativeDocumentMoniker": "VS project\\Main.cpp",
+              "ToolTip": "C:\\Users\\I\\source\\repos\\Fedor200616\\BarchevLab2\\VS project\\Main.cpp",
+              "RelativeToolTip": "VS project\\Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-15T13:48:23.501Z",
               "EditorCaption": ""
             }
           ]
