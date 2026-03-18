@@ -1,14 +1,16 @@
 #include <iostream>
 #include <windows.h>
-#include <conio.h> //÷òåíèå êëâàèø
+#include <conio.h> 
+#include <filesystem>
 
 
 #ifndef GENERAL_H
 #define GENERAL_H
 
+//namespace fs = std::filesystem;
 
-int print_menu(std::string menu[], int size); //ôóíêöèÿ âûâîäà íà ýêðàí ìåíþ è ðàáîòû ñ íèì
-int work_menu();
+int print_menu(std::string menu[], int size); //Функция вывода на экран меню
+int work_menu(); // Обрабатываем запросы пользователя
 
 
 

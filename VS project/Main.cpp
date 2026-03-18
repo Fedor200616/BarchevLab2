@@ -3,24 +3,11 @@
 #include "General_func.h"
 #include "Work_with_files.h"
 
-extern std::string main_menu[] = {
-    "Выберите файл имен...",
-    "Выберите файл паролей...",
-    "Вывод данных пользователя",
-    "Полный вывод файлов",
-    "Выход из программы"
-};
-
 
 int main()
 {
-    SetConsoleCP(1251);       
-    SetConsoleOutputCP(1251);
-    setlocale(LC_ALL, "");
-    int sel = -1;
-    int menuSize = sizeof(main_menu) / sizeof(main_menu[0]);
-    sel = print_menu(main_menu, menuSize);
-    std::cout << sel;
+    setlocale(LC_ALL, "ru_RU.UTF-8");
+    work_menu();
 
 
     return 0;

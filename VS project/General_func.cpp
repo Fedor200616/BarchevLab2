@@ -1,9 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "Main.h"
 #include "General_func.h"
+#include "Work_with_files.h"
 
 
-int print_menu(std::string menu[], int size) {
+int print_menu(std::string menu[], int size) { //функция вывода на экран меню
 	int selected = 0;
 	bool isdone = false;
 	int key = 0;
@@ -25,15 +26,15 @@ int print_menu(std::string menu[], int size) {
 		{
 			key = _getch();
 
-			if (key == 72) {
+			if (key == 72) { // Стрелка вниз
 				if (selected != 0) {
-					selected--;   // ââåðõ
+					selected--;   
 				}
 
 			}
-			else if (key == 80) {
+			else if (key == 80) { // стрелка вверх
 				if (selected != (size - 1)){
-					selected++;   // âíèç
+					selected++;   
 				}
 			}
 		}
@@ -43,4 +44,53 @@ int print_menu(std::string menu[], int size) {
 
 	}
 	return selected;
+}
+
+int work_menu() {
+	int sel = 1;
+	std::string main_menu[] = {
+	"Выберите файл имен...",
+	"Выберите файл паролей...",
+	"Вывод данных пользователя",
+	"Полный вывод данных",
+	"Выход из программы"
+	};
+	int isdone = 0;
+	fs::path secname_file = "0";
+	fs::path password_file = "0";
+
+	while (!isdone) {
+		sel = 1;
+		int menuSize = sizeof(main_menu) / sizeof(main_menu[0]);
+		sel = print_menu(main_menu, menuSize);
+		switch (sel)
+		{
+		case 0: 
+			system("cls");
+			std::cout << "Выберите файл фамилий во всплывающем окне \n";
+			secname_file = FileDialog();
+			if (secname_file != "0")
+				main_menu[0] = std::string("Выбран файл ") + secname_file.string();
+			break;
+		case 1:
+			system("cls");
+			std::cout << "Выберите файл паролей во всплывающем окне \n";
+			password_file = FileDialog();
+			if (password_file != "0")
+				main_menu[1] = std::string("Выбран файл ") + password_file.string();
+			break;
+		case 2: // TODO вывод данных пользователя
+			break; 
+		case 3: // TODO вывод всех данных
+			break;
+		default:
+			sel = 0;
+			isdone = 1;
+			break;
+		}
+
+	}
+
+
+	return sel;
 }
