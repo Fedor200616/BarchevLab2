@@ -27,13 +27,13 @@ int print_menu(std::string menu[], int size) {
 
 			if (key == 72) {
 				if (selected != 0) {
-					selected--;   // вверх
+					selected--;   // ГўГўГҐГ°Гµ
 				}
 
 			}
 			else if (key == 80) {
 				if (selected != (size - 1)){
-					selected++;   // вниз
+					selected++;   // ГўГ­ГЁГ§
 				}
 			}
 		}
@@ -43,11 +43,4 @@ int print_menu(std::string menu[], int size) {
 
 	}
 	return selected;
-}
-
-std::vector<data> fillData() {
-	std::vector<data> result; 
-	
-									//Собирает данные из std::string name_filename();
-	return result;
 }
