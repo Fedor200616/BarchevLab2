@@ -3,13 +3,18 @@
 #include <windows.h>
 #include <filesystem>
 #include <commdlg.h>
+#include <fstream>
+#include <string>
+
+#include "main.h"
+
 
 #ifndef FILESYS_H
 #define FILESYS_H
 
 namespace fs = std::filesystem;
 
-//std::vector<data> fillData(); // ôóíêöèÿ îáðàçóåò áîëüøîé âåêòîð ñî âñåìè èìåíàìè è ïàðîëÿìè ñòóäåíòîâ
-fs::path FileDialog(); //âûáîð íàçâàíèÿ òåêñòâîãî ôàéëà èìåí èëè ïàðîëåé 
+std::vector<data> fillData(fs::path secname, fs::path password); // Функция обьединяет файлы в массив структур data
+fs::path FileDialog(); // Фунция высвечивает диалоговое окно проводника для выбора файла
 
 #endif

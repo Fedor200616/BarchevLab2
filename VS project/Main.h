@@ -8,7 +8,7 @@ const int char_length = 255;
 const int Aa = 32;
 const int pass_length = 20;
 
-struct data
+extern struct data
 {
     std::string name;
     std::string pass;
