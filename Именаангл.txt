@@ -1,0 +1,8 @@
+| Ivanov    | M7O-203BV-24 | 8  |
+| Petrov    | M7O-204BV-24 | 4  |
+| Sidorov   | M7O-205BV-24 | 12 |
+| Kuznetsov | M7O-206BV-24 | 3  |
+| Smirnov   | M7O-207BV-24 | 7  |
+| Vasiliev  | M7O-208BV-24 | 1  |
+| Popov     | M7O-209BV-24 | 9  |
+| Sokolov   | M7O-210BV-24 | 10 |

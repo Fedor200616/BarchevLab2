@@ -6,10 +6,9 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
     std::ifstream sfile(secname);
     std::ifstream pfile(password);
 
-    std::vector<data> result;  // создаём пустой вектор
+    std::vector<data> result;  
     std::string str_buf;
-    data d_buf = {"", "", "", ""};
-
+    
     if (!sfile.is_open()) {           // проверяем
         std::cerr << "Не удалось открыть файл фамилий\n";
         return result;
@@ -18,6 +17,49 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
         std::cerr << "Не удалось открыть файл паролей\n";
         return result;
     }
+
+
+    while (std::getline(sfile, str_buf)) {
+        data d_buf = { "", "", "", "" };
+        int d_type = 0;
+        bool secondvert = false; // Маркер что | уже была, и после нее чтоит еще одна, нужен для перехода на след строку в этом случае
+        bool endofstring = false;
+        std::istringstream iss(str_buf); // 
+        std::string word_buf;
+        while (iss >> word_buf && !endofstring) { //Запишем имена группы и номера в структуру
+            if (word_buf == "|") {
+                if (!secondvert)
+                    secondvert = true;
+                else
+                    endofstring = true;
+            }
+            else {
+                switch (d_type){
+                case 0:
+                    d_buf.name = word_buf;
+                    break;
+                case 1:
+                    d_buf.group = word_buf;
+                    break;
+                case 2:
+                    d_buf.number = word_buf;
+                    break;
+                default:
+                    endofstring = true;
+                    break;
+                }
+                d_type++;
+                secondvert = false;
+            }
+        }
+        //if (d_buf.name == "" || d_buf.group == "" || d_buf.number == "") continue; //Мы не записываем неполную строку
+        //else 
+        std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n";
+        result.push_back(d_buf);
+
+    }
+
+    
     return result;
 }
 

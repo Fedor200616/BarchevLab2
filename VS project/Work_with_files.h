@@ -5,6 +5,7 @@
 #include <commdlg.h>
 #include <fstream>
 #include <string>
+#include <sstream>
 
 #include "main.h"
 
