@@ -140,7 +140,7 @@ int print_arr(std::vector<data>& vec) {
 	system("cls");
 	std::cout << vec.size() << '\n';
 	for (int i = 0; i < vec.size(); i++) {
-		std::cout << vec[i].strnum << " " << vec[i].name << " " << vec[i].pass << " " << vec[i].group << " " << vec[i].number << '\n';
+		std::cout << vec[i].name << " " << vec[i].pass << " " << vec[i].group << " " << vec[i].number << '\n';
 	}
 	std::cout << "Нажмите любую кнопку чтобы продолжить\n";
 	_getch();

@@ -13,6 +13,6 @@ int print_menu(std::string menu[], int size); //Функция вывода на экран меню
 int work_menu(); // Обрабатываем запросы пользователя
 int inop_funct();
 int print_arr(std::vector<data>& vec);
-
+int compare(std::vector<data>& vec, data d);
 
 #endif

@@ -1,4 +1,5 @@
 #include "main.h"
+#include "General_func.h"
 #include "Work_with_files.h" 
 
 
@@ -20,7 +21,7 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
 
     int i = 0;
     while (std::getline(sfile, str_buf)) {
-        data d_buf = { i++ ,"", "", "", "" };
+        data d_buf = {"", "", "", "" };
         int d_type = 0;
         //bool secondvert = false; // Маркер что | уже была, и после нее чтоит еще одна, нужен для перехода на след строку в этом случае
         bool endofstring = false;
@@ -55,12 +56,50 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
             }
 
         }
-        //if (d_buf.name == "" || d_buf.group == "" || d_buf.number == "") continue; //Мы не записываем неполную строку
-        //else 
-        std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n";
+         
+        //std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n"; //Отладка
+        result.push_back(d_buf);
+
+    } //Записываем в вектор данные из файла фамилий
+    
+    while (std::getline(pfile, str_buf)) {
+        data d_buf = {"", "", "", "" };
+        int d_type = 0;
+
+        bool endofstring = false;
+        int wordnum = 0;
+
+        std::istringstream iss(str_buf); // 
+        std::string word_buf;
+        std::string password;
+        while (iss >> word_buf && !endofstring) { //Запишем имена группы и номера в структуру
+            if (word_buf == "|") {
+                wordnum++;
+            }
+            else {
+                switch(d_type) {
+                case 0:
+                    d_buf.pass = word_buf;
+                    break;
+                case 1:
+                    d_buf.group = word_buf; //Тут получается что при отсуствии имении - группа будет писаться вместо него, стоит исправить
+                    break;
+                case 2:
+                    d_buf.number = word_buf;
+                    break;
+                default:
+                    endofstring = true;
+                    break;
+                }
+            }
+        }
+        compare(result, d_buf);
+
+        //std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n"; //Отладка
         result.push_back(d_buf);
 
     }
+
 
     
     return result;
