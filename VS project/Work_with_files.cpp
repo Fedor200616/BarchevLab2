@@ -18,20 +18,19 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
         return result;
     }
 
-
+    int i = 0;
     while (std::getline(sfile, str_buf)) {
-        data d_buf = { "", "", "", "" };
+        data d_buf = { i++ ,"", "", "", "" };
         int d_type = 0;
-        bool secondvert = false; // ћаркер что | уже была, и после нее чтоит еще одна, нужен дл€ перехода на след строку в этом случае
+        //bool secondvert = false; // ћаркер что | уже была, и после нее чтоит еще одна, нужен дл€ перехода на след строку в этом случае
         bool endofstring = false;
+        int wordnum = 0;
+
         std::istringstream iss(str_buf); // 
         std::string word_buf;
         while (iss >> word_buf && !endofstring) { //«апишем имена группы и номера в структуру
             if (word_buf == "|") {
-                if (!secondvert)
-                    secondvert = true;
-                else
-                    endofstring = true;
+                wordnum++;
             }
             else {
                 switch (d_type){
@@ -39,7 +38,7 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
                     d_buf.name = word_buf;
                     break;
                 case 1:
-                    d_buf.group = word_buf;
+                    d_buf.group = word_buf; //“ут получаетс€ что при отсуствии имении - группа будет писатьс€ вместо него, стоит исправить
                     break;
                 case 2:
                     d_buf.number = word_buf;
@@ -49,8 +48,12 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
                     break;
                 }
                 d_type++;
-                secondvert = false;
+                wordnum++;
             }
+            if (wordnum >= 7) {
+                endofstring = true;
+            }
+
         }
         //if (d_buf.name == "" || d_buf.group == "" || d_buf.number == "") continue; //ћы не записываем неполную строку
         //else 

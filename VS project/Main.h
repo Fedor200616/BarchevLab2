@@ -10,6 +10,7 @@ const int pass_length = 20;
 
 extern struct data
 {
+    int strnum;
     std::string name;
     std::string pass;
     std::string group;

@@ -6,8 +6,8 @@
 int main()
 {
     //system("chcp 65001");
-    SetConsoleCP(1251);       // входная кодировка
-    SetConsoleOutputCP(1251); // выходная кодировка
+    //SetConsoleCP(1251);       // входная кодировка
+    //SetConsoleOutputCP(1251); // выходная кодировка
     setlocale(LC_ALL, "");
     work_menu();
 
