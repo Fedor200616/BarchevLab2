@@ -60,9 +60,9 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
         //std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n"; //Отладка
         result.push_back(d_buf);
 
-    } //Записываем в вектор данные из файла фамилий
+    } 
     
-    while (std::getline(pfile, str_buf)) {
+    while (std::getline(pfile, str_buf)) { //Повторяем с паролем
         data d_buf = {"", "", "", "" };
         int d_type = 0;
 
@@ -82,7 +82,7 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
                     d_buf.pass = word_buf;
                     break;
                 case 1:
-                    d_buf.group = word_buf; //Тут получается что при отсуствии имении - группа будет писаться вместо него, стоит исправить
+                    d_buf.group = word_buf; 
                     break;
                 case 2:
                     d_buf.number = word_buf;
@@ -91,12 +91,14 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
                     endofstring = true;
                     break;
                 }
+                d_type++;
+                wordnum++;
             }
         }
-        compare(result, d_buf);
+        //TODO Сделать эти два цикла одной функцией
+        compare(result, d_buf); //сравнивает структуру с полем
 
         //std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n"; //Отладка
-        result.push_back(d_buf);
 
     }
 
@@ -130,4 +132,18 @@ fs::path FileDialog() {  // Вызов диалоговго окна выбора файла через проводник
         std::wcout << L"You cancelled.\n"; 
         return "0";
     }  
+}
+
+int compare(std::vector<data>& vec, data d) {
+	int is_inserted = 0;
+    for(int i = 0; i < vec.size(); i++) {
+		if (vec[i].group == d.group && vec[i].number == d.number) {
+			vec[i].pass = d.pass;
+			is_inserted = 1;
+		}
+    }
+    if (!is_inserted) {
+		vec.push_back(d);
+    }
+    return 0;
 }

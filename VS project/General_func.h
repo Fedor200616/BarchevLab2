@@ -11,8 +11,7 @@
 
 int print_menu(std::string menu[], int size); //Функция вывода на экран меню
 int work_menu(); // Обрабатываем запросы пользователя
-int inop_funct();
-int print_arr(std::vector<data>& vec);
-int compare(std::vector<data>& vec, data d);
+int inop_funct(int r); // Функция высвечивает окно INOP если данная часть не готова, делает ретюрн аргумента
+int print_arr(std::vector<data>& vec); // Печатаем массив структур data на экран, для отладки
 
 #endif

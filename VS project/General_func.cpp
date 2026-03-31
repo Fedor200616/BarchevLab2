@@ -98,7 +98,7 @@ int work_menu() {
 			}
 			break;
 		case 2: // TODO вывод данных пользователя
-			inop_funct();
+			inop_funct(1);
 			break; 
 		case 3: // TODO вывод всех данных
 			print_arr(result);
@@ -121,7 +121,7 @@ int work_menu() {
 	return sel;
 }
 
-int inop_funct() {
+int inop_funct(int r) {
 	system("cls");
 	std::cout << "Разработчик уже работает над этой функцией и она появится позже\n";
 	for (int i = 0; i < 25; i++) {
@@ -132,7 +132,7 @@ int inop_funct() {
 	}
 	std::cout << "Нажмите любую кнопку чтобы продолжить\n";
 	_getch();
-	return 0;
+	return r;
 
 }
 

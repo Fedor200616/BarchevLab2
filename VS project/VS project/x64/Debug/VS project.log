@@ -1,5 +1,2 @@
 ﻿  Work_with_files.cpp
-C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\main.h(11,15): warning C4091: extern : пропускается слева от "data", когда ни одна переменная не объявлена
-  (компиляция исходного файла "Work_with_files.cpp")
-  
   VS project.vcxproj -> C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\x64\Debug\VS project.exe
