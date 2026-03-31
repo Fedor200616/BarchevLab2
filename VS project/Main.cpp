@@ -53,7 +53,7 @@ int print_menu(std::string menu[], int size) { //функция вывода н�
 					selected = 0;
 			}
 		}
-		else if (key == 13) {
+		else if (key == 13) { // Enter
 			isdone = true;
 		}
 

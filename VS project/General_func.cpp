@@ -15,14 +15,14 @@ int work_menu() {
 	std::string main_menu[] = {
 	"Выберите файл имен...",
 	"Выберите файл паролей...",
-	"Вывод данных пользователя",
+	"Поиск данных пользователя",
 	"Полный вывод данных в файл",
 	"Инструкция по использованию",
 	"Показать массив данных (для отладки)",
 	"Выход из программы"
 	};
 
-	int menuSize = sizeof(main_menu) / sizeof(main_menu[0]);
+	const int menuSize = sizeof(main_menu) / sizeof(main_menu[0]);
 	
 	fs::path secname_file = "0";
 	fs::path password_file = "0";
@@ -39,7 +39,7 @@ int work_menu() {
 		case 0: 
 			system("cls");
 			std::cout << "Выберите файл фамилий во всплывающем окне \n";
-			secname_file = FileDialog();
+			secname_file = OpenFileDialog();
 			if (secname_file != "0") {
 				main_menu[0] = std::string("Выбран файл имен ") + secname_file.string();
 				namechanged = 1;
@@ -49,17 +49,33 @@ int work_menu() {
 		case 1:
 			system("cls");
 			std::cout << "Выберите файл паролей во всплывающем окне \n";
-			password_file = FileDialog();
+			password_file = OpenFileDialog();
 			if (password_file != "0") {
 				main_menu[1] = std::string("Выбран файл паролей ") + password_file.string();
 				namechanged = 1;
 			}
 			break;
 		case 2: // TODO вывод данных пользователя
-			inop_funct(1);
+			if (!result.empty()) {
+				output_menu(result);
+			}
+			else {
+				system("cls");
+				std::cout << "Нет данных для вывода, выберите файлы и дождитесь их обработки\n";
+				std::cout << "Нажмите любую кнопку чтобы продолжить\n";
+				_getch();
+			}
 			break; 
 		case 3: // TODO вывод всех данных
-			inop_funct(1);
+			if (!result.empty()) {
+				output_menu(result);
+			}
+			else {
+				system("cls");
+				std::cout << "Нет данных для вывода, выберите файлы и дождитесь их обработки\n";
+				std::cout << "Нажмите любую кнопку чтобы продолжить\n";
+				_getch();
+			}
 			break;
 		case 4: // TODO инструкция
 			inop_funct(1);
@@ -98,15 +114,4 @@ int inop_funct(int r) {
 	_getch();
 	return r;
 
-}
-
-int print_arr(std::vector<data>& vec) {
-	system("cls");
-	std::cout << vec.size() << '\n';
-	for (int i = 0; i < vec.size(); i++) {
-		std::cout << vec[i].name << " " << vec[i].pass << " " << vec[i].group << " " << vec[i].number << '\n';
-	}
-	std::cout << "Нажмите любую кнопку чтобы продолжить\n";
-	_getch();
-	return 0;
 }

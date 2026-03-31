@@ -1,6 +1,7 @@
-#include "main.h"
+п»ї#include "main.h"
 #include "General_func.h"
 #include "Work_with_files.h" 
+#include "Output.h"
 
 
 std::vector<data> fillData(fs::path secname, fs::path password) {
@@ -10,12 +11,12 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
     std::vector<data> result;  
     std::string str_buf;
     
-    if (!sfile.is_open()) {           // проверяем
-        std::cerr << "Не удалось открыть файл фамилий\n";
+    if (!sfile.is_open()) {           // РїСЂРѕРІРµСЂСЏРµРј
+        std::cerr << "РќРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» С„Р°РјРёР»РёР№\n";
         return result;
     }
-    if (!pfile.is_open()) {           // проверяем
-        std::cerr << "Не удалось открыть файл паролей\n";
+    if (!pfile.is_open()) {           // РїСЂРѕРІРµСЂСЏРµРј
+        std::cerr << "РќРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РїР°СЂРѕР»РµР№\n";
         return result;
     }
 
@@ -23,13 +24,13 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
     while (std::getline(sfile, str_buf)) {
         data d_buf = {"", "", "", "" };
         int d_type = 0;
-        //bool secondvert = false; // Маркер что | уже была, и после нее чтоит еще одна, нужен для перехода на след строку в этом случае
+        //bool secondvert = false; // РњР°СЂРєРµСЂ С‡С‚Рѕ | СѓР¶Рµ Р±С‹Р»Р°, Рё РїРѕСЃР»Рµ РЅРµРµ С‡С‚РѕРёС‚ РµС‰Рµ РѕРґРЅР°, РЅСѓР¶РµРЅ РґР»СЏ РїРµСЂРµС…РѕРґР° РЅР° СЃР»РµРґ СЃС‚СЂРѕРєСѓ РІ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ
         bool endofstring = false;
         int wordnum = 0;
 
         std::istringstream iss(str_buf); // 
         std::string word_buf;
-        while (iss >> word_buf && !endofstring) { //Запишем имена группы и номера в структуру
+        while (iss >> word_buf && !endofstring) { //Р—Р°РїРёС€РµРј РёРјРµРЅР° РіСЂСѓРїРїС‹ Рё РЅРѕРјРµСЂР° РІ СЃС‚СЂСѓРєС‚СѓСЂСѓ
             if (word_buf == "|") {
                 wordnum++;
             }
@@ -39,7 +40,7 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
                     d_buf.name = word_buf;
                     break;
                 case 1:
-                    d_buf.group = word_buf; //Тут получается что при отсуствии имении - группа будет писаться вместо него, стоит исправить
+                    d_buf.group = word_buf; //РўСѓС‚ РїРѕР»СѓС‡Р°РµС‚СЃСЏ С‡С‚Рѕ РїСЂРё РѕС‚СЃСѓСЃС‚РІРёРё РёРјРµРЅРёРё - РіСЂСѓРїРїР° Р±СѓРґРµС‚ РїРёСЃР°С‚СЊСЃСЏ РІРјРµСЃС‚Рѕ РЅРµРіРѕ, СЃС‚РѕРёС‚ РёСЃРїСЂР°РІРёС‚СЊ
                     break;
                 case 2:
                     d_buf.number = word_buf;
@@ -57,12 +58,12 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
 
         }
          
-        //std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n"; //Отладка
+        //std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n"; //РћС‚Р»Р°РґРєР°
         result.push_back(d_buf);
 
     } 
     
-    while (std::getline(pfile, str_buf)) { //Повторяем с паролем
+    while (std::getline(pfile, str_buf)) { //РџРѕРІС‚РѕСЂСЏРµРј СЃ РїР°СЂРѕР»РµРј
         data d_buf = {"", "", "", "" };
         int d_type = 0;
 
@@ -72,7 +73,7 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
         std::istringstream iss(str_buf); // 
         std::string word_buf;
         std::string password;
-        while (iss >> word_buf && !endofstring) { //Запишем имена группы и номера в структуру
+        while (iss >> word_buf && !endofstring) { //Р—Р°РїРёС€РµРј РёРјРµРЅР° РіСЂСѓРїРїС‹ Рё РЅРѕРјРµСЂР° РІ СЃС‚СЂСѓРєС‚СѓСЂСѓ
             if (word_buf == "|") {
                 wordnum++;
             }
@@ -95,10 +96,10 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
                 wordnum++;
             }
         }
-        //TODO Сделать эти два цикла одной функцией
-        compare(result, d_buf); //сравнивает структуру с полем
+        //TODO РЎРґРµР»Р°С‚СЊ СЌС‚Рё РґРІР° С†РёРєР»Р° РѕРґРЅРѕР№ С„СѓРЅРєС†РёРµР№
+        compare(result, d_buf); //СЃСЂР°РІРЅРёРІР°РµС‚ СЃС‚СЂСѓРєС‚СѓСЂСѓ СЃ РїРѕР»РµРј
 
-        //std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n"; //Отладка
+        //std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n"; //РћС‚Р»Р°РґРєР°
 
     }
 
@@ -107,7 +108,7 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
     return result;
 }
 
-fs::path FileDialog() {  // Вызов диалоговго окна выбора файла через проводник
+fs::path OpenFileDialog() {  // Р’С‹Р·РѕРІ РґРёР°Р»РѕРіРѕРІРіРѕ РѕРєРЅР° РІС‹Р±РѕСЂР° С„Р°Р№Р»Р° С‡РµСЂРµР· РїСЂРѕРІРѕРґРЅРёРє
     wchar_t filename[MAX_PATH];  
     fs::path root = fs::current_path().root_directory();
 
@@ -117,12 +118,12 @@ fs::path FileDialog() {  // Вызов диалоговго окна выбора файла через проводник
 
     ofn.lStructSize = sizeof(ofn);  
     ofn.hwndOwner = NULL;  
-    ofn.lpstrFilter = L"Text Files\0*.txt\0*.*\0";  //фильтруем на текстовые
+    ofn.lpstrFilter = L"Text Files\0*.txt\0*.*\0";  //С„РёР»СЊС‚СЂСѓРµРј РЅР° С‚РµРєСЃС‚РѕРІС‹Рµ
     ofn.lpstrFile = filename;  
     ofn.nMaxFile = MAX_PATH;  
-    ofn.lpstrTitle = L"Выберите файл";  //заголовок
+    ofn.lpstrTitle = L"Р’С‹Р±РµСЂРёС‚Рµ С„Р°Р№Р»";  //Р·Р°РіРѕР»РѕРІРѕРє
     ofn.lpstrInitialDir = root.c_str();  // FIXME
-    ofn.Flags = OFN_DONTADDTORECENT | OFN_FILEMUSTEXIST; //Флаги не добавлять несуществующий, не делать недавним 
+    ofn.Flags = OFN_DONTADDTORECENT | OFN_FILEMUSTEXIST; //Р¤Р»Р°РіРё РЅРµ РґРѕР±Р°РІР»СЏС‚СЊ РЅРµСЃСѓС‰РµСЃС‚РІСѓСЋС‰РёР№, РЅРµ РґРµР»Р°С‚СЊ РЅРµРґР°РІРЅРёРј 
 
     if (GetOpenFileNameW(&ofn)) {  
         std::wcout << L"You chose the file \"" << filename << L"\"\n";  
@@ -146,4 +147,44 @@ int compare(std::vector<data>& vec, data d) {
 		vec.push_back(d);
     }
     return 0;
+}
+
+fs::path SaveFileDialog(int file_type) {  // Р’С‹Р·РѕРІ РґРёР°Р»РѕРіРѕРІРіРѕ РѕРєРЅР° РІС‹Р±РѕСЂР° С„Р°Р№Р»Р° С‡РµСЂРµР· РїСЂРѕРІРѕРґРЅРёРє
+    wchar_t filename[MAX_PATH];
+    fs::path root = fs::current_path().root_directory();
+
+    OPENFILENAME ofn;
+    ZeroMemory(&filename, sizeof(filename));
+    ZeroMemory(&ofn, sizeof(ofn));
+
+    ofn.lStructSize = sizeof(ofn);
+    ofn.hwndOwner = NULL;
+    switch (file_type)
+    {
+    case 1:
+		ofn.lpstrFilter = L"CSV Files\0*.csv\0*.*\0";  //С„РёР»СЊС‚СЂСѓРµРј РЅР° CSV
+		ofn.lpstrDefExt = L"csv"; // СЂР°СЃС€РёСЂРµРЅРёРµ
+		break;
+    case 0:
+    default:
+		ofn.lpstrFilter = L"Text Files\0*.txt\0*.*\0";
+        ofn.lpstrDefExt = L"txt"; 
+        break;
+    }
+
+    ofn.lpstrFile = filename;
+    ofn.nMaxFile = MAX_PATH;
+    ofn.lpstrTitle = L"РЎРѕС…СЂР°РЅРёС‚СЊ С„Р°Р№Р» РєР°Рє";  //Р·Р°РіРѕР»РѕРІРѕРє
+    
+    ofn.lpstrInitialDir = root.c_str();  
+    ofn.Flags = OFN_DONTADDTORECENT | OFN_OVERWRITEPROMPT; 
+
+    if (GetOpenFileNameW(&ofn)) {
+        //std::cout << "РЎРѕС…СЂР°РЅСЏРµРј РІ: " << filename << "\n";
+        return fs::path(filename);
+    }
+    else {
+        std::cout << "You cancelled.\n";
+        return "0";
+    }
 }
