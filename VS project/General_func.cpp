@@ -2,53 +2,9 @@
 #include "Main.h"
 #include "General_func.h"
 #include "Work_with_files.h"
+#include "Output.h"
 
 
-int print_menu(std::string menu[], int size) { //функция вывода на экран меню
-	int selected = 0;
-	bool isdone = false;
-	int key = 0;
-
-
-	while (!isdone) {
-		system("cls");
-		for (int i = 0; i < size; i++) {
-			if (i == selected){
-				std::cout << "--> " << menu[i] << '\n';
-			}
-			else {
-				std::cout << "    " << menu[i] << '\n';
-			}
-		}
-
-		key = _getch();
-		if (key == 224)
-		{
-			key = _getch();
-
-			if (key == 72) { // Стрелка вниз
-				if (selected != 0) {
-					selected--;
-				}
-				else
-					selected = size - 1;
-
-			}
-			else if (key == 80) { // стрелка вверх
-				if (selected != (size - 1)) {
-					selected++;
-				}
-				else
-					selected = 0;
-			}
-		}
-		else if (key == 13) {
-			isdone = true;
-		}
-
-	}
-	return selected;
-}
 
 int work_menu() {
 	int sel = 1;
@@ -60,7 +16,9 @@ int work_menu() {
 	"Выберите файл имен...",
 	"Выберите файл паролей...",
 	"Вывод данных пользователя",
-	"Полный вывод данных",
+	"Полный вывод данных в файл",
+	"Инструкция по использованию",
+	"Показать массив данных (для отладки)",
 	"Выход из программы"
 	};
 
@@ -101,6 +59,12 @@ int work_menu() {
 			inop_funct(1);
 			break; 
 		case 3: // TODO вывод всех данных
+			inop_funct(1);
+			break;
+		case 4: // TODO инструкция
+			inop_funct(1);
+			break;
+		case 5: // Служебная функция для отладки, выводит массив структур data на экран
 			print_arr(result);
 			break;
 		default:

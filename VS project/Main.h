@@ -16,7 +16,7 @@ struct data
     std::string number;
 };
 
-
+int print_menu(std::string menu[], int size); //Функция вывода на экран меню
 
 
 #endif 

@@ -130,11 +130,13 @@
   <ItemGroup>
     <ClCompile Include="General_func.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Output.cpp" />
     <ClCompile Include="Work_with_files.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="General_func.h" />
     <ClInclude Include="Main.h" />
+    <ClInclude Include="Output.h" />
     <ClInclude Include="Work_with_files.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
