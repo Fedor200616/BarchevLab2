@@ -1,3 +1,2 @@
-﻿  Output.cpp
-C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(134,2): warning C4809: в операторе switch имеется ненужная метка "default"; все возможные метки "case" уже заданы
+﻿  Search.cpp
   VS project.vcxproj -> C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\x64\Debug\VS project.exe

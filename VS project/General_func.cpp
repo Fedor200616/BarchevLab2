@@ -3,6 +3,7 @@
 #include "General_func.h"
 #include "Work_with_files.h"
 #include "Output.h"
+#include "Search.h"
 
 
 
@@ -18,7 +19,6 @@ int work_menu() {
 	"Поиск данных пользователя",
 	"Полный вывод данных в файл",
 	"Инструкция по использованию",
-	"Показать массив данных (для отладки)",
 	"Выход из программы"
 	};
 
@@ -57,7 +57,7 @@ int work_menu() {
 			break;
 		case 2: // TODO вывод данных пользователя
 			if (!result.empty()) {
-				output_menu(result);
+				main_search(result);
 			}
 			else {
 				system("cls");
@@ -79,9 +79,6 @@ int work_menu() {
 			break;
 		case 4: // TODO инструкция
 			inop_funct(1);
-			break;
-		case 5: // Служебная функция для отладки, выводит массив структур data на экран
-			print_arr(result);
 			break;
 		default:
 			sel = 0;
@@ -114,4 +111,22 @@ int inop_funct(int r) {
 	_getch();
 	return r;
 
+}
+
+int print_arr(const std::vector<data>& vec, std::string separator) {
+	system("cls");
+	std::cout << "Всего строк: " << vec.size() << '\n';
+	std::cout << std::left << std::setw(20) << "Имя" << separator
+		<< std::left << std::setw(12) << "Группа" << separator
+		<< std::left << std::setw(2) << "Номер" << separator
+		<< std::left << std::setw(20) << "Пароль" << "\n"; // Заголовок
+	for (const auto& d : vec) {
+		std::cout << std::left << std::setw(20) << d.name << separator
+			<< std::left << std::setw(12) << d.group << separator
+			<< std::left << std::setw(2) << d.number << separator
+			<< std::left << std::setw(20) << d.pass << "\n";
+	}
+	std::cout << "Нажмите любую кнопку чтобы продолжить\n";
+	_getch();
+	return 0;
 }

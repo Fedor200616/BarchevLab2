@@ -136,24 +136,6 @@ int output_to_file(const std::vector<data>& vec, menuopt menu[]) {
 	return 0;
 }
 
-int print_arr(const std::vector<data>& vec, std::string separator) {
-	system("cls");
-	std::cout << "Всего строк: " << vec.size() << '\n';
-	std::cout << std::left << std::setw(20) << "Имя" << separator
-		<< std::left << std::setw(12) << "Группа" << separator
-		<< std::left << std::setw(2) << "Номер" << separator
-		<< std::left << std::setw(20) << "Пароль"  << "\n"; // Заголовок
-	for (const auto& d : vec) {
-		std::cout << std::left << std::setw(20) << d.name << separator
-			<< std::left << std::setw(12) << d.group << separator
-			<< std::left << std::setw(2) << d.number << separator
-			<< std::left << std::setw(20) << d.pass << "\n";
-	}
-	std::cout << "Нажмите любую кнопку чтобы продолжить\n";
-	_getch();
-	return 0;
-}
-
 int SaveToTXT(const std::vector<data>& vec, fs::path save_path, std::string separator) {
 	std::ofstream outfile(save_path);
 	if (!outfile.is_open()) {

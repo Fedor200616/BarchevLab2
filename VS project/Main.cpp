@@ -2,6 +2,8 @@
 #include "Main.h"
 #include "General_func.h"
 #include "Work_with_files.h"
+#include "Output.h"
+#include "Search.h"
 
 int main()
 {

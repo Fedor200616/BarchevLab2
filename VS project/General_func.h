@@ -11,6 +11,6 @@
 
 int work_menu(); // Обрабатываем запросы пользователя
 int inop_funct(int r); // Функция высвечивает окно INOP если данная часть не готова, делает ретюрн аргумента
-
+int print_arr(const std::vector<data>& vec, std::string separator = " | "); // Печатаем массив структур data на экран, для отладки
 
 #endif
