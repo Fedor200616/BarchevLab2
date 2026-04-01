@@ -1,0 +1,965 @@
+﻿  General_func.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,26): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "General_func.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,32): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(10,21): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "General_func.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(10,21): error C2878: filesystem: пространство имен или класс с таким именем не существует
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,45): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,49): error C2061: синтаксическая ошибка: идентификатор "path"
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,45): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,49): error C2061: синтаксическая ошибка: идентификатор "path"
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(17,21): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "General_func.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(17,21): error C2878: filesystem: пространство имен или класс с таким именем не существует
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,28): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,32): error C2065: path: необъявленный идентификатор
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,37): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "secname"
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,46): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,1): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "OpenFileDialog"
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,1): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,5): error C2086: int path: переопределение
+  (компиляция исходного файла "General_func.cpp")
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5):
+       см. объявление "path"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "SaveFileDialog"
+  (компиляция исходного файла "General_func.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(27,2): error C2653: fs: не является именем класса или пространства имен
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(27,11): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "secname_file"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(27,11): error C2065: secname_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(28,2): error C2653: fs: не является именем класса или пространства имен
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(28,11): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "password_file"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(28,11): error C2065: password_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(42,4): error C2065: secname_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(42,19): error C3861: OpenFileDialog: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(43,8): error C2065: secname_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(44,69): error C2065: secname_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(52,4): error C2065: password_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(52,20): error C3861: OpenFileDialog: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(53,8): error C2065: password_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(54,75): error C2065: password_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(89,22): error C2065: password_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(89,46): error C2065: secname_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(92,22): error C2065: secname_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(92,36): error C2065: password_file: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(119,33): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(119,33): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(119,12): error C2593: неоднозначный "оператор <<"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(486,39):
+      может быть "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(454,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(436,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(418,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(400,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(382,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(364,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(346,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(328,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(309,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(283,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(264,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(230,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(212,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(206,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(200,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(195,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(694,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(738,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(774,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(819,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(936,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(942,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(947,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(953,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(1088,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)"
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(119,12):
+      при попытке сопоставить список аргументов "(std::basic_ostream<char,std::char_traits<char>>, unknown-type)"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(120,24): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(120,24): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(121,24): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(121,24): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(122,24): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(122,24): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(124,34): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(124,34): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(124,13): error C2593: неоднозначный "оператор <<"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(486,39):
+      может быть "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(454,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(436,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(418,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(400,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(382,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(364,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(346,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(328,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(309,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(283,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(264,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(230,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(212,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(206,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(200,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(195,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(694,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(738,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(774,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(819,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(936,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(942,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(947,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(953,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(1088,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)"
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(124,13):
+      при попытке сопоставить список аргументов "(std::basic_ostream<char,std::char_traits<char>>, unknown-type)"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(125,25): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(125,25): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(126,25): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(126,25): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(127,25): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(127,25): error C3861: setw: идентификатор не найден
+  Main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,26): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,32): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(10,21): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(10,21): error C2878: filesystem: пространство имен или класс с таким именем не существует
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,45): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,49): error C2061: синтаксическая ошибка: идентификатор "path"
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,45): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,49): error C2061: синтаксическая ошибка: идентификатор "path"
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(17,21): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(17,21): error C2878: filesystem: пространство имен или класс с таким именем не существует
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,28): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,32): error C2065: path: необъявленный идентификатор
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,37): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "secname"
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,46): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,1): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "OpenFileDialog"
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,1): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Main.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,5): error C2086: int path: переопределение
+  (компиляция исходного файла "Main.cpp")
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5):
+       см. объявление "path"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "SaveFileDialog"
+  (компиляция исходного файла "Main.cpp")
+  
+  Output.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,26): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,32): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(10,21): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(10,21): error C2878: filesystem: пространство имен или класс с таким именем не существует
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(18,28): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(18,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(18,34): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(20,31): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(20,20): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(20,37): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,26): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,32): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,26): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,32): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,6): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,12): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,6): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,12): error C2059: синтаксическая ошибка: <
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,42): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,6): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,12): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,6): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,6): error C2086: int vector: переопределение
+  (компиляция исходного файла "Output.cpp")
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,6):
+       см. объявление "vector"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,12): error C2059: синтаксическая ошибка: <
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,40): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(17,21): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Output.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(17,21): error C2878: filesystem: пространство имен или класс с таким именем не существует
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,28): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,32): error C2065: path: необъявленный идентификатор
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,37): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "secname"
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,46): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,1): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "OpenFileDialog"
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,1): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,5): error C2086: int path: переопределение
+  (компиляция исходного файла "Output.cpp")
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5):
+       см. объявление "path"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "SaveFileDialog"
+  (компиляция исходного файла "Output.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(26,4): error C2660: output_to_file: функция не принимает 2 аргументов
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(20,5):
+       см. объявление "output_to_file"
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(26,4):
+      при попытке сопоставить список аргументов "(const std::vector<data,std::allocator<data>>, menuopt [7])"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(106,16): error C3861: filter_data: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(106,3): error C2593: неоднозначный "оператор ="
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(1497,26):
+      может быть "std::vector<data,std::allocator<data>> &std::vector<data,std::allocator<data>>::operator =(std::initializer_list<_Ty>)"
+          with
+          [
+              _Ty=data
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(1476,26):
+      или       "std::vector<data,std::allocator<data>> &std::vector<data,std::allocator<data>>::operator =(const std::vector<data,std::allocator<data>> &)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(729,26):
+      или       "std::vector<data,std::allocator<data>> &std::vector<data,std::allocator<data>>::operator =(std::vector<data,std::allocator<data>> &&) noexcept(<expr>)"
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(106,3):
+      при попытке сопоставить список аргументов "(std::vector<data,std::allocator<data>>, unknown-type)"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(108,15): error C3861: sort_data: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(108,2): error C2593: неоднозначный "оператор ="
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(1497,26):
+      может быть "std::vector<data,std::allocator<data>> &std::vector<data,std::allocator<data>>::operator =(std::initializer_list<_Ty>)"
+          with
+          [
+              _Ty=data
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(1476,26):
+      или       "std::vector<data,std::allocator<data>> &std::vector<data,std::allocator<data>>::operator =(const std::vector<data,std::allocator<data>> &)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(729,26):
+      или       "std::vector<data,std::allocator<data>> &std::vector<data,std::allocator<data>>::operator =(std::vector<data,std::allocator<data>> &&) noexcept(<expr>)"
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(108,2):
+      при попытке сопоставить список аргументов "(std::vector<data,std::allocator<data>>, unknown-type)"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(117,3): error C2660: print_arr: функция не принимает 2 аргументов
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,5):
+       см. объявление "print_arr"
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(117,3):
+      при попытке сопоставить список аргументов "(std::vector<data,std::allocator<data>>, std::string)"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(121,2): error C2653: fs: не является именем класса или пространства имен
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(121,11): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "save_path"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(121,11): error C2065: save_path: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(121,23): error C3861: SaveFileDialog: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(122,6): error C2065: save_path: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(127,32): error C2065: save_path: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(130,32): error C2065: save_path: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(134,2): warning C4809: в операторе switch имеется ненужная метка "default"; все возможные метки "case" уже заданы
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(139,45): error C2653: fs: не является именем класса или пространства имен
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(139,49): error C2061: синтаксическая ошибка: идентификатор "path"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(140,24): error C2065: save_path: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(147,31): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(147,31): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(147,10): error C2593: неоднозначный "оператор <<"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(486,39):
+      может быть "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(454,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(436,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(418,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(400,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(382,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(364,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(346,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(328,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(309,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(283,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(264,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(230,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(212,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(206,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(200,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(195,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(694,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(738,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(774,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(819,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(936,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(942,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(947,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(953,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(1088,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)"
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(147,10):
+      при попытке сопоставить список аргументов "(std::basic_ostream<char,std::char_traits<char>>, unknown-type)"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(147,55): error C2065: separator: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(148,24): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(148,24): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(148,54): error C2065: separator: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(149,24): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(149,24): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(149,51): error C2065: separator: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(150,24): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(150,24): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(152,32): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(152,32): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(152,11): error C2593: неоднозначный "оператор <<"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(486,39):
+      может быть "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(454,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(436,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(418,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(400,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(382,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(364,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(346,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(328,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(309,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(283,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(264,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(230,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(212,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(206,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(200,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(195,39):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(694,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(738,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(774,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(819,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(936,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(942,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(947,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(953,31):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ostream(1088,32):
+      или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)"
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(152,11):
+      при попытке сопоставить список аргументов "(std::basic_ostream<char,std::char_traits<char>>, unknown-type)"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(152,54): error C2065: separator: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(153,25): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(153,25): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(153,48): error C2065: separator: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(154,25): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(154,25): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(154,48): error C2065: separator: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(155,25): error C2039: "setw": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(155,25): error C3861: setw: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(159,81): error C2065: save_path: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(165,45): error C2653: fs: не является именем класса или пространства имен
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(165,49): error C2061: синтаксическая ошибка: идентификатор "path"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(166,24): error C2065: save_path: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(179,81): error C2065: save_path: необъявленный идентификатор
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(198,8): error C2039: "sort": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(198,8): error C3861: sort: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(203,8): error C2039: "sort": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(203,8): error C3861: sort: идентификатор не найден
+  Search.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,26): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,32): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(10,21): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(10,21): error C2878: filesystem: пространство имен или класс с таким именем не существует
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(18,28): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(18,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(18,34): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(20,31): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(20,20): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(20,37): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,26): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,32): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,26): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,32): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,6): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,12): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,6): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,12): error C2059: синтаксическая ошибка: <
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,42): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,6): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,12): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,6): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,6): error C2086: int vector: переопределение
+  (компиляция исходного файла "Search.cpp")
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(23,6):
+       см. объявление "vector"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,12): error C2059: синтаксическая ошибка: <
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(24,40): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(17,21): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Search.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(17,21): error C2878: filesystem: пространство имен или класс с таким именем не существует
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,28): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,32): error C2065: path: необъявленный идентификатор
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,37): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "secname"
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,46): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,1): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "OpenFileDialog"
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,1): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,5): error C2086: int path: переопределение
+  (компиляция исходного файла "Search.cpp")
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5):
+       см. объявление "path"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "SaveFileDialog"
+  (компиляция исходного файла "Search.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Search.cpp(19,5): error C2664: "int print_arr(const int)": невозможно преобразовать аргумент 1 из "std::vector<data,std::allocator<data>>" в "const int"
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Search.cpp(19,15):
+      Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,5):
+       см. объявление "print_arr"
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Search.cpp(19,5):
+      при попытке сопоставить список аргументов "(std::vector<data,std::allocator<data>>)"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Search.cpp(89,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Search.cpp(96,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Work_with_files.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,26): error C2039: "vector": не является членом "std".
+  (компиляция исходного файла "Work_with_files.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\iostream(18,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.h(14,32): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(10,21): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Work_with_files.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(10,21): error C2878: filesystem: пространство имен или класс с таким именем не существует
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,45): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(21,49): error C2061: синтаксическая ошибка: идентификатор "path"
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,45): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.h(22,49): error C2061: синтаксическая ошибка: идентификатор "path"
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(17,21): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Work_with_files.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sstream(19,1):
+       см. объявление "std"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(17,21): error C2878: filesystem: пространство имен или класс с таким именем не существует
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,28): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,32): error C2065: path: необъявленный идентификатор
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,37): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "secname"
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,46): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,1): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "OpenFileDialog"
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,1): error C2653: fs: не является именем класса или пространства имен
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,5): error C2086: int path: переопределение
+  (компиляция исходного файла "Work_with_files.cpp")
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5):
+       см. объявление "path"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(22,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "SaveFileDialog"
+  (компиляция исходного файла "Work_with_files.cpp")
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(7,28): error C2653: fs: не является именем класса или пространства имен
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(7,19): error C2374: fillData: переопределение; множественная инициализация
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(19,19):
+       см. объявление "fillData"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(7,37): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "secname"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(7,46): error C2653: fs: не является именем класса или пространства имен
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(7,65): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(7,65): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(111,1): error C2653: fs: не является именем класса или пространства имен
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(111,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(111,5): error C2086: int path: переопределение
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5):
+       см. объявление "path"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(111,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "OpenFileDialog"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(111,27): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(111,27): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(140,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(152,1): error C2653: fs: не является именем класса или пространства имен
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(152,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(152,5): error C2086: int path: переопределение
+      C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.h(20,5):
+       см. объявление "path"
+  
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(152,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "SaveFileDialog"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(152,40): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Work_with_files.cpp(152,40): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+  Создание кода...
