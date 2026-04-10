@@ -40,24 +40,28 @@ int main_search(const std::vector<data>& vec) {
 }
 
 int print_menuopt(const std::vector<data>& search_result, std::string search_str){
-	std::string separator = "====================================================================\n";
 	static int selected = 0;
 
 	system("cls");
-	std::cout << " Введите строку для поиска (по фамилии, группе или номеру): \n"
-		<< separator;
+	std::cout << " Введите строку для поиска (по фамилии, группе или номеру): \n";
+	separator();
 
 	std::cout << search_str << "\n";
-	std::cout << separator;
+	separator();
 
-	if (!search_result.empty() && search_str.size() > 0) {
+	if (!search_result.empty() && search_str.size() > 0) { //Есть совпадения
 		std::cout << "Найдено совпадений: " << search_result.size() << "\n";
-		std::cout << separator;
-		//TODO Выводим найденные совпадения
+		separator();
+		//Выводим найденные совпадения
+		if (search_result.size() <= 7) {
+			print_arr(search_result, " | ", 0, 0);
+
+		}
+
 	}
-	else if (search_result.empty() && search_str.size() > 0) {
+	else if (search_result.empty() && search_str.size() > 0) { // Строка не нулевая, совпадений нет
 		std::cout << "Совпадений не найдено\n";
-		std::cout << separator;
+		separator();
 	}
 	
 	int have_res = 0;
@@ -70,6 +74,7 @@ int print_menuopt(const std::vector<data>& search_result, std::string search_str
 	return have_res;
 }
 
+int ftype = 0; //тип поля для поиска
 std::string key_analyse(std::string search_str, int key) {
 	if (key == 8) { // Backspace
 		if (!search_str.empty()) {
@@ -86,27 +91,6 @@ std::vector<data> search(const std::vector<data>& vec, std::string str) {
 	std::vector<data> search_result;
 	int search_num = 0;
 	
-	/*bool havenum = false;
-	for (int i = 0; i < str.size(); i++) {
-		if (isdigit(str[i])) {
-			havenum = true;
-			break;
-		}
-	}
-	bool havespec = false;
-	for (int i = 0; i < str.size(); i++) {
-		int key = str[i];
-		if (!isalnum(key) && !((key >= 192 && key <= 255) || key == 184 || key == 168)) {
-			havespec = true;
-			break;
-		}
-	}
-	//  TYPE   num   spec
-	//  name   0     0
-	//  group  -     -
-	//  num    1     0
-	//  pass   1     1
-*/
 	for (const auto& d : vec) {
 		int istrue[4] = { 0 };
 		if (search_name(d, str) || search_pass(d, str) || search_group(d, str) || search_number(d, str)) {
@@ -117,34 +101,56 @@ std::vector<data> search(const std::vector<data>& vec, std::string str) {
 	return search_result;
 }
 
+int print_search_res(const std::vector<data>& search_result) { //Функция вывода результатов поиска на ЭКРАН ПОИСКА
+	for (int i = 0; i < search_result.size(); i++) {
+		std::cout << search_result[i].name << " " << search_result[i].group << '\n';
+	}
+	separator();
+	return 0;
+}
+
 int search_name(data d, std::string str) {
+	if (str.size() > d.name.size()) {
+		return 0;
+	}
 	for (int i = 0; i < str.size(); i++) {
 		if (!(str[i] == d.name[i]))
 			return 0;
 	}
 	return 1;
 }
-
 int search_pass(data d, std::string str) {
+	if (str.size() > d.name.size()) {
+		return 0;
+	}
 	for (int i = 0; i < str.size(); i++) {
 		if (!(str[i] == d.pass[i]))
 			return 0;
 	}
-	return 1;
+	return 2;
 }
-
 int search_group(data d, std::string str) {
+	if (str.size() > d.name.size()) {
+		return 0;
+	}
 	for (int i = 0; i < str.size(); i++) {
 		if (!(str[i] == d.group[i]))
 			return 0;
 	}
-	return 1;
+	return 3;
 }
-
 int search_number(data d, std::string str) {
+	if (str.size() > d.name.size()) {
+		return 0;
+	}
 	for (int i = 0; i < str.size(); i++) {
 		if (!(str[i] == d.number[i]))
 			return 0;
 	}
-	return 1;
+	return 4;
+}
+
+int separator() {
+	std::string sep = "====================================================================\n";
+	std::cout << sep;
 }

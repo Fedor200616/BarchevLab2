@@ -113,20 +113,26 @@ int inop_funct(int r) {
 
 }
 
-int print_arr(const std::vector<data>& vec, std::string separator) {
-	system("cls");
-	std::cout << "Всего строк: " << vec.size() << '\n';
-	std::cout << std::left << std::setw(20) << "Имя" << separator
-		<< std::left << std::setw(12) << "Группа" << separator
-		<< std::left << std::setw(2) << "Номер" << separator
+int print_arr(const std::vector<data>& vec, std::string sep, int strnum, int keysel) {
+	
+	if (strnum) {
+		system("cls");
+		std::cout << "Всего строк: " << vec.size() << '\n';
+	}
+
+	std::cout << std::left << std::setw(20) << "Имя" << sep
+		<< std::left << std::setw(12) << "Группа" << sep
+		<< std::left << std::setw(2) << "Номер" << sep
 		<< std::left << std::setw(20) << "Пароль" << "\n"; // Заголовок
+
 	for (const auto& d : vec) {
-		std::cout << std::left << std::setw(20) << d.name << separator
-			<< std::left << std::setw(12) << d.group << separator
-			<< std::left << std::setw(2) << d.number << separator
+		std::cout << std::left << std::setw(20) << d.name << sep
+			<< std::left << std::setw(12) << d.group << sep
+			<< std::left << std::setw(2) << d.number << sep
 			<< std::left << std::setw(20) << d.pass << "\n";
 	}
-	std::cout << "Нажмите любую кнопку чтобы продолжить\n";
+	if (keysel)
+		std::cout << "Нажмите любую кнопку чтобы продолжить\n";
 	_getch();
 	return 0;
 }
