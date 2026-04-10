@@ -13,4 +13,10 @@ int print_menuopt(const std::vector<data>& search_result, std::string search_str
 std::string key_analyse(std::string search_str, int key); // ‘ункци€ дл€ анализа нажатых клавиш, принимает строку дл€ поиска и код нажатой клавиши, возвращает измененную строку дл€ поиска
 std::vector<data> search(const std::vector<data>& result, std::string str); // ‘ункци€ дл€ поиска данных, принимает массив структур data дл€ поиска и строку дл€ поиска, возвращает количество найденных совпадений
 
+//Ќиже служебные функции дл€ поиска совпадени€ в отедльной строке
+int search_name(data d, std::string str);
+int search_pass(data d, std::string str);
+int search_group(data d, std::string str);
+int search_number(data d, std::string str);
+
 #endif

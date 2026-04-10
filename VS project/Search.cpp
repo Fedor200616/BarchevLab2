@@ -85,7 +85,8 @@ std::string key_analyse(std::string search_str, int key) {
 std::vector<data> search(const std::vector<data>& vec, std::string str) {
 	std::vector<data> search_result;
 	int search_num = 0;
-	bool havenum = false;
+	
+	/*bool havenum = false;
 	for (int i = 0; i < str.size(); i++) {
 		if (isdigit(str[i])) {
 			havenum = true;
@@ -105,35 +106,45 @@ std::vector<data> search(const std::vector<data>& vec, std::string str) {
 	//  group  -     -
 	//  num    1     0
 	//  pass   1     1
-
+*/
 	for (const auto& d : vec) {
-		/*if (!havenum && !havespec) {
-			// »щем по фамилии
-			if (d.name.find(str) != std::string::npos) {
-				search_result.push_back(d);
-				search_num++;
-			}
+		int istrue[4] = { 0 };
+		if (search_name(d, str) || search_pass(d, str) || search_group(d, str) || search_number(d, str)) {
+			search_result.push_back(d);
+			search_num++;
 		}
-		else if (havenum && !havespec) {
-			//»щем по номеру
-			if (d.number.find(str) != std::string::npos) {
-				search_result.push_back(d);
-				search_num++;
-			}
-		}
-		else if (havenum && havespec) {
-			//»щем по паролю
-			if (d.pass.find(str) != std::string::npos) {
-				search_result.push_back(d);
-				search_num++;
-			}
-		}
-		else { // »щем по группе (Ёкспериментально, в случае пробелм исправить на поиск по всем пол€м)
-		*/	if (d.group.find(str) != std::string::npos || d.name.find(str) != std::string::npos || d.number.find(str) != std::string::npos || d.pass.find(str) != std::string::npos) {
-				search_result.push_back(d);
-				search_num++;
-			}
-		//}
 	}
 	return search_result;
+}
+
+int search_name(data d, std::string str) {
+	for (int i = 0; i < str.size(); i++) {
+		if (!(str[i] == d.name[i]))
+			return 0;
+	}
+	return 1;
+}
+
+int search_pass(data d, std::string str) {
+	for (int i = 0; i < str.size(); i++) {
+		if (!(str[i] == d.pass[i]))
+			return 0;
+	}
+	return 1;
+}
+
+int search_group(data d, std::string str) {
+	for (int i = 0; i < str.size(); i++) {
+		if (!(str[i] == d.group[i]))
+			return 0;
+	}
+	return 1;
+}
+
+int search_number(data d, std::string str) {
+	for (int i = 0; i < str.size(); i++) {
+		if (!(str[i] == d.number[i]))
+			return 0;
+	}
+	return 1;
 }
