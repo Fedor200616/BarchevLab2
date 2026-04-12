@@ -4,16 +4,15 @@
 #include "Output.h"
 #include "Work_with_files.h"
 
+
 int output_menu(const std::vector<data>& vec) {
 	const std::string path = R"(C:\Users\I\Desktop\)";
 	std::string save_path = "0";
 	menuopt menu_param[] = {
 		{"<Формат .TXT>", "<Формат .CSV>", 0}, //0
 		{"<Вывести все поля>", "<Вывести только полностью заполненные поля>", 0}, //1
-		{"<Сортировать по группе>", "<Сортировать по фамилии>", 0}, //2
-		{"<Знак раздела ','>", "<Знак раздела '|'>"}, // 3
-		{"<Вывести в файл>", "<Вывести в консоль>", 0}, // 4
-		{"Вывести результат", "", 0},
+		{"<Знак раздела '|'>", "<Знак раздела ','>"}, // 2
+		{"Вывести результат", "", 0}, //3
 		{"Назад в главное меню", "", 0}
 	};
 	const int menuSize = sizeof(menu_param) / sizeof(menu_param[0]);
@@ -22,10 +21,10 @@ int output_menu(const std::vector<data>& vec) {
 	bool isdone = 0;
 	while (!isdone) {
 		selected = print_menuopt(menu_param, menuSize);
-		if (selected == 5) {
+		if (selected == save_res) {
 			output_to_file(vec, menu_param);
 		}
-		else if (selected == 6) {
+		else if (selected == exit_output) {
 			isdone = 1;
 		}
 		else {
@@ -93,29 +92,24 @@ int print_menuopt(menuopt menu[], int size){ //функция вывода на экран меню
 		}
 
 	}
-	if (selected == size - 1) {
+	if (selected == exit_output) {
 		selected = 0;
-		return size - 1;
+		return exit_output;
 	}
 	return selected;
 } //Возвращает индекс выбранного пункта меню
 
 int output_to_file(const std::vector<data>& vec, menuopt menu[]) {
 	std::vector<data> final_data = vec;
-	if (menu[1].param == 1) { // Выводить только полностью заполненные поля
+	if (menu[only_full].param == 1) { // Выводить только полностью заполненные поля
 		final_data = filter_data(final_data);
 	}
-	final_data = sort_data(final_data, menu[2].param); // Сортировать по группе или по фамилии
 	std::string separator; 
-	if (menu[3].param == 0) { // Выбор знака раздела
-		separator = " , ";
-	}
-	else {
+	if (menu[sep_type].param == 0) { // Выбор знака раздела
 		separator = " | ";
 	}
-	if (menu[4].param == 1) { // Выводить в консоль
-		print_arr(final_data, separator);
-		return 0;
+	else {
+		separator = ", ";
 	}
 
 	fs::path save_path = SaveFileDialog(menu[0].param);
@@ -123,10 +117,10 @@ int output_to_file(const std::vector<data>& vec, menuopt menu[]) {
 		return 0;
 	}
 	switch (menu[0].param) { // Сохранение в выбранном формате
-	case 0:
+	case 0: // Сохранение в формате .TXT
 		return SaveToTXT(final_data, save_path, separator);
 		break;
-	case 1:
+	case 1: // Сохранение в формате .CSV
 		return SaveToCSV(final_data, save_path);
 		break;
 	default:
@@ -136,7 +130,7 @@ int output_to_file(const std::vector<data>& vec, menuopt menu[]) {
 	return 0;
 }
 
-int SaveToTXT(const std::vector<data>& vec, fs::path save_path, std::string separator) {
+int SaveToTXT(const std::vector<data>& vec, fs::path save_path, std::string sep) {
 	std::ofstream outfile(save_path);
 	if (!outfile.is_open()) {
 		system("cls");
@@ -144,15 +138,31 @@ int SaveToTXT(const std::vector<data>& vec, fs::path save_path, std::string sepa
 		_getch();
 		return -1;
 	}
-	outfile << std::left << std::setw(20) << "Имя" << separator
-		<< std::left << std::setw(12) << "Группа" << separator
-		<< std::left << std::setw(2) << "Номер" << separator
-		<< std::left << std::setw(20) << "Пароль" << "\n"; // Заголовок
-	for (const auto& d : vec) {
-		outfile << std::left << std::setw(20) << d.name << separator
-			<< std::left << std::setw(12) << d.group << separator
-			<< std::left << std::setw(2) << d.number << separator
-			<< std::left << std::setw(20) << d.pass << "\n";
+	if (sep == " | ") {
+		outfile << std::left << std::setw(20) << "Имя" << sep
+			<< std::left << std::setw(12) << "Группа" << sep
+			<< std::left << std::setw(5) << "Номер" << sep
+			<< std::left << std::setw(20) << "Пароль" << "\n"; // Заголовок
+
+		for (const auto& d : vec) {
+			outfile << std::left << std::setw(20) << d.name << sep
+				<< std::left << std::setw(12) << d.group << sep
+				<< std::left << std::setw(5) << d.number << sep
+				<< std::left << std::setw(20) << d.pass << "\n";
+		}
+	}
+	else {
+		outfile << std::left << "Имя" << sep
+			<< std::left << "Группа" << sep
+			<< std::left << "Номер" << sep
+			<< std::left << "Пароль" << "\n"; // Заголовок
+
+		for (const auto& d : vec) {
+			outfile << std::left << d.name << sep
+				<< std::left << d.group << sep
+				<< std::left << d.number << sep
+				<< std::left << d.pass << "\n";
+		}
 	}
 	outfile.close();
 	system("cls");
@@ -192,17 +202,3 @@ std::vector<data> filter_data(const std::vector<data>& vec) {
 	return filtered;
 }
 
-std::vector<data> sort_data(const std::vector<data>& vec, bool sort_type) {
-	std::vector<data> sorted = vec;
-	if (sort_type == 0) { // Сортировка по группе
-		std::sort(sorted.begin(), sorted.end(), [](const data& a, const data& b) {
-			return a.group < b.group;
-			});
-	}
-	else { // Сортировка по фамилии
-		std::sort(sorted.begin(), sorted.end(), [](const data& a, const data& b) {
-			return a.name < b.name;
-			});
-	}
-	return sorted;
-}

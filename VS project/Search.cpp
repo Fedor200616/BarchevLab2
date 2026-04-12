@@ -5,6 +5,8 @@
 #include "Work_with_files.h"
 #include "Search.h"
 
+const int identic_num = 7; // макс количество совпадений, для вывода в промежуточном окне
+
 int main_search(const std::vector<data>& vec) {
 	std::string search_str = "";
 	std::vector<data> search_result;
@@ -39,7 +41,7 @@ int main_search(const std::vector<data>& vec) {
 	return done;
 }
 
-int print_menuopt(const std::vector<data>& search_result, std::string search_str){
+int print_menuopt(const std::vector<data>& search_result, std::string search_str) {
 	static int selected = 0;
 
 	system("cls");
@@ -49,21 +51,23 @@ int print_menuopt(const std::vector<data>& search_result, std::string search_str
 	std::cout << search_str << "\n";
 	separator();
 
-	if (!search_result.empty() && search_str.size() > 0) { //Есть совпадения
-		std::cout << "Найдено совпадений: " << search_result.size() << "\n";
-		separator();
-		//Выводим найденные совпадения
-		if (search_result.size() <= 7) {
-			print_arr(search_result, " | ", 0, 0);
+	if (search_str.size()) {
+		if (!search_result.empty()) { //Есть совпадения
+			std::cout << "Найдено совпадений: " << search_result.size() << "\n";
+			separator();
+			//Выводим найденные совпадения
+			if (search_result.size() <= identic_num) {
+				print_arr(search_result, " | ", 0, 0);
+
+			}
 
 		}
+		else if (search_result.empty()) { // Строка не нулевая, совпадений нет
+			std::cout << "Совпадений не найдено\n";
+			separator();
+		}
+	}
 
-	}
-	else if (search_result.empty() && search_str.size() > 0) { // Строка не нулевая, совпадений нет
-		std::cout << "Совпадений не найдено\n";
-		separator();
-	}
-	
 	int have_res = 0;
 	if (search_result.size() > 0 && search_str != "") {
 		std::cout << "Нажмите Enter для просмотра результатов\n";

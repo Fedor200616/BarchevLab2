@@ -5,7 +5,7 @@
 #include "Output.h"
 #include "Search.h"
 
-
+const int arr_num = 12; // Количество строк при выводе
 
 int work_menu() {
 	int sel = 1;
@@ -114,25 +114,54 @@ int inop_funct(int r) {
 }
 
 int print_arr(const std::vector<data>& vec, std::string sep, int strnum, int keysel) {
-	
-	if (strnum) {
-		system("cls");
-		std::cout << "Всего строк: " << vec.size() << '\n';
-	}
+	const int list_num = vec.size() / arr_num;
+	int page_num = 0;
+	bool isdone = false;
+	int get_char = 0;
 
-	std::cout << std::left << std::setw(20) << "Имя" << sep
-		<< std::left << std::setw(12) << "Группа" << sep
-		<< std::left << std::setw(2) << "Номер" << sep
-		<< std::left << std::setw(20) << "Пароль" << "\n"; // Заголовок
+	while (!isdone) {
+		if (strnum) {
+			system("cls");
+			std::cout << "Всего строк: " << vec.size() << '\n';
+			std::cout << "Страница: " << (page_num + 1) << " из " << list_num << '\n';
+		}
+		else {
+			isdone = true;
+		}
+		std::cout << std::left << std::setw(20) << "Имя" << sep
+			<< std::left << std::setw(12) << "Группа" << sep
+			<< std::left << std::setw(5) << "Номер" << sep
+			<< std::left << std::setw(20) << "Пароль" << "\n"; // Заголовок
 
-	for (const auto& d : vec) {
-		std::cout << std::left << std::setw(20) << d.name << sep
-			<< std::left << std::setw(12) << d.group << sep
-			<< std::left << std::setw(2) << d.number << sep
-			<< std::left << std::setw(20) << d.pass << "\n";
+		int start_index = page_num * arr_num;
+		for (int i = start_index; i < start_index + arr_num; i++) {
+			std::cout << std::left << std::setw(20) << vec[i].name << sep
+				<< std::left << std::setw(12) << vec[i].group << sep
+				<< std::left << std::setw(5) << vec[i] .number << sep
+				<< std::left << std::setw(20) << vec[i].pass << "\n";
+		}
+		if (keysel) {
+			separator();
+			std::cout << "Используйте стрелки влево и вправо для переключения страниц\n";
+			std::cout << "Нажмите ESC чтобы продолжить\n";
+			get_char = _getch();
+			if (get_char == 224) {
+				get_char = _getch();
+				if (get_char == 75) { // Стрелка влево
+					if (page_num != 0) {
+						page_num--;
+					}
+				}
+				else if (get_char == 77) { // стрелка вправо
+					if (page_num != (list_num - 1)) {
+						page_num++;
+					}
+				}
+			}
+			else if (get_char == 27) { // ESC
+				isdone = true;
+			}
+		}
 	}
-	if (keysel)
-		std::cout << "Нажмите любую кнопку чтобы продолжить\n";
-	_getch();
 	return 0;
 }
