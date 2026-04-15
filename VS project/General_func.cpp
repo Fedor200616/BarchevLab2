@@ -5,7 +5,7 @@
 #include "Output.h"
 #include "Search.h"
 
-const int arr_num = 12; // Количество строк при выводе
+
 
 int work_menu() {
 	int sel = 1;
@@ -123,7 +123,7 @@ int print_arr(const std::vector<data>& vec, std::string sep, int strnum, int key
 		if (strnum) {
 			system("cls");
 			std::cout << "Всего строк: " << vec.size() << '\n';
-			std::cout << "Страница: " << (page_num + 1) << " из " << list_num << '\n';
+			std::cout << "Страница: " << (page_num + 1) << " из " << (list_num + 1) << '\n';
 		}
 		else {
 			isdone = true;
@@ -134,11 +134,15 @@ int print_arr(const std::vector<data>& vec, std::string sep, int strnum, int key
 			<< std::left << std::setw(20) << "Пароль" << "\n"; // Заголовок
 
 		int start_index = page_num * arr_num;
-		for (int i = start_index; i < start_index + arr_num; i++) {
+		int end_index = arr_num;
+		if (vec.size() / arr_num == page_num)
+			end_index = vec.size() % arr_num;
+		for (int i = start_index; i < start_index + end_index; i++) {
 			std::cout << std::left << std::setw(20) << vec[i].name << sep
 				<< std::left << std::setw(12) << vec[i].group << sep
 				<< std::left << std::setw(5) << vec[i] .number << sep
 				<< std::left << std::setw(20) << vec[i].pass << "\n";
+
 		}
 		if (keysel) {
 			separator();
@@ -153,7 +157,7 @@ int print_arr(const std::vector<data>& vec, std::string sep, int strnum, int key
 					}
 				}
 				else if (get_char == 77) { // стрелка вправо
-					if (page_num != (list_num - 1)) {
+					if (page_num != (list_num)) {
 						page_num++;
 					}
 				}

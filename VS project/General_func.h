@@ -7,6 +7,7 @@
 #ifndef GENERAL_H
 #define GENERAL_H
 
+const int arr_num = 25; // Количество строк при выводе
 //namespace fs = std::filesystem;
 
 int work_menu(); // Обрабатываем запросы пользователя

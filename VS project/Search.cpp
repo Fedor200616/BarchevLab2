@@ -9,7 +9,7 @@ const int identic_num = 7; // макс количество совпадений, для вывода в промежуто
 
 int main_search(const std::vector<data>& vec) {
 	std::string search_str = "";
-	std::vector<data> search_result;
+	std::vector<data> search_result = vec;
 	int done = 0;
 
 	while (!done) {
@@ -51,25 +51,24 @@ int print_menuopt(const std::vector<data>& search_result, std::string search_str
 	std::cout << search_str << "\n";
 	separator();
 
-	if (search_str.size()) {
+	//if (search_str.size()) { //Ввод не нулевой
 		if (!search_result.empty()) { //Есть совпадения
 			std::cout << "Найдено совпадений: " << search_result.size() << "\n";
 			separator();
-			//Выводим найденные совпадения
-			if (search_result.size() <= identic_num) {
+			if (search_result.size() <= identic_num) { //Выводим совпадения
 				print_arr(search_result, " | ", 0, 0);
-
 			}
 
 		}
-		else if (search_result.empty()) { // Строка не нулевая, совпадений нет
+		else if (search_result.empty()) { // Совпадений нет
 			std::cout << "Совпадений не найдено\n";
 			separator();
 		}
-	}
+	//}
+
 
 	int have_res = 0;
-	if (search_result.size() > 0 && search_str != "") {
+	if (search_result.size() > 0) {
 		std::cout << "Нажмите Enter для просмотра результатов\n";
 		have_res = 1;
 	}
