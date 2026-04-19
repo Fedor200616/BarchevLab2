@@ -96,10 +96,8 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
                 wordnum++;
             }
         }
-        //TODO Сделать эти два цикла одной функцией
         compare(result, d_buf); //сравнивает структуру с полем
 
-        //std::cout << d_buf.name << " " << d_buf.group << " " << d_buf.number << "\n"; //Отладка
 
     }
 
@@ -122,7 +120,7 @@ fs::path OpenFileDialog() {  // Вызов диалоговго окна выб�
     ofn.lpstrFile = filename;  
     ofn.nMaxFile = MAX_PATH;  
     ofn.lpstrTitle = L"Выберите файл";  //заголовок
-    ofn.lpstrInitialDir = root.c_str();  // FIXME
+    ofn.lpstrInitialDir = root.c_str(); 
     ofn.Flags = OFN_DONTADDTORECENT | OFN_FILEMUSTEXIST; //Флаги не добавлять несуществующий, не делать недавним 
 
     if (GetOpenFileNameW(&ofn)) {  

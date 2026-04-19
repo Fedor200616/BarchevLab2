@@ -78,7 +78,7 @@ int work_menu() {
 			}
 			break;
 		case 4: // TODO инструкция
-			inop_funct(1);
+			inop_funct();
 			break;
 		default:
 			sel = 0;
@@ -98,7 +98,7 @@ int work_menu() {
 	return sel;
 }
 
-int inop_funct(int r) {
+int inop_funct() {
 	system("cls");
 	std::cout << "Разработчик уже работает над этой функцией и она появится позже\n";
 	for (int i = 0; i < 25; i++) {
@@ -109,7 +109,7 @@ int inop_funct(int r) {
 	}
 	std::cout << "Нажмите любую кнопку чтобы продолжить\n";
 	_getch();
-	return r;
+	return 0;
 
 }
 
@@ -123,7 +123,8 @@ int print_arr(const std::vector<data>& vec, std::string sep, int strnum, int key
 		if (strnum) {
 			system("cls");
 			std::cout << "Всего строк: " << vec.size() << '\n';
-			std::cout << "Страница: " << (page_num + 1) << " из " << (list_num + 1) << '\n';
+			if (list_num > 0)
+				std::cout << "Страница: " << (page_num + 1) << " из " << (list_num + 1) << '\n';
 		}
 		else {
 			isdone = true;
