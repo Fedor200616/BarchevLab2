@@ -5,8 +5,6 @@
 #include "Work_with_files.h"
 #include "Search.h"
 
-const int identic_num = 7; // макс количество совпадений, для вывода в промежуточном окне
-
 int main_search(const std::vector<data>& vec) {
 	std::string search_str = "";
 	std::vector<data> search_result = vec;

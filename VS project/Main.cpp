@@ -20,7 +20,6 @@ int print_menu(const std::string menu[], int size) { //функция вывод
 	bool isdone = false;
 	int key = 0;
 
-
 	while (!isdone) {
 		system("cls");
 		for (int i = 0; i < size; i++) {

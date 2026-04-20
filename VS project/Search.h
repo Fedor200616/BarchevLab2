@@ -8,6 +8,8 @@
 #ifndef SEARCH_H
 #define SEARCH_H
 
+const int identic_num = 12; // макс количество совпадений, для вывода в промежуточном окне
+
 /// <summary>
 /// Основная функция для поиска данных пользователя
 /// </summary>

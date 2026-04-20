@@ -143,6 +143,9 @@
     <ClInclude Include="Search.h" />
     <ClInclude Include="Work_with_files.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="x64\Release\instruction.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

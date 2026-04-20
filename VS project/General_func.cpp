@@ -12,6 +12,15 @@ int work_menu() {
 
 	std::vector<data> result;
 
+	std::string main_menu[] = {
+	"Выберите файл имен...",
+	"Выберите файл паролей...",
+	"Поиск данных пользователя",
+	"Полный вывод данных в файл",
+	"Инструкция по использованию",
+	"Выход из программы"
+	};
+
 	const int menuSize = sizeof(main_menu) / sizeof(main_menu[0]);
 	
 	fs::path secname_file = "0";
@@ -45,7 +54,7 @@ int work_menu() {
 				namechanged = 1;
 			}
 			break;
-		case 2: // TODO вывод данных пользователя
+		case 2:
 			if (!result.empty()) {
 				main_search(result);
 			}
@@ -56,7 +65,7 @@ int work_menu() {
 				_getch();
 			}
 			break; 
-		case 3: // TODO вывод всех данных
+		case 3:
 			if (!result.empty()) {
 				output_menu(result);
 			}
@@ -68,7 +77,7 @@ int work_menu() {
 			}
 			break;
 		case 4: // TODO инструкция
-			inop_funct();
+			instruction();
 			break;
 		default:
 			sel = 0;
@@ -158,5 +167,29 @@ int print_arr(const std::vector<data>& vec, std::string sep, int strnum, int key
 			}
 		}
 	}
+	return 0;
+}
+
+int instruction() { // Функция инструкции пользователю
+	std::string line;
+
+	std::ifstream ifile("instruction.md"); // Открытие файла инструкции
+	system("cls");
+	if (!ifile) {
+		
+		printf("Ошибка: файл instruction.md не найден!\n");
+		printf("Нажмите любую клавишу для возврата в меню...\n");
+		_getch();
+		return 0;
+	}
+
+	while (std::getline(ifile, line)) {
+		std::cout << line << '\n';
+	} // Чтение и вывод строки из файла
+
+
+	printf("\nНажмите любую клавишу для возврата в меню...\n");
+	_getch();
+	system("cls");
 	return 0;
 }
