@@ -37,7 +37,7 @@ int print_menu(const std::string menu[], int size) { //функция вывод
 		{
 			key = _getch();
 
-			if (key == 72) { // Стрелка вниз
+			if (key == 72) { // Стрелка вверх
 				if (selected != 0) {
 					selected--;
 				}
@@ -45,7 +45,7 @@ int print_menu(const std::string menu[], int size) { //функция вывод
 					selected = size - 1;
 
 			}
-			else if (key == 80) { // стрелка вверх
+			else if (key == 80) { // стрелка вниз
 				if (selected != (size - 1)) {
 					selected++;
 				}
