@@ -21,7 +21,7 @@ struct data
 /// </summary>
 /// <param name="menu[]">Массив полей меню</param>
 /// <param name="size">Размер массива полей меню</param>
-int print_menu(std::string menu[], int size);
+int print_menu(const std::string menu[], int size);
 
 
 #endif 

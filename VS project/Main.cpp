@@ -15,7 +15,7 @@ int main()
     return 0;
 }
 
-int print_menu(std::string menu[], int size) { //функция вывода на экран меню
+int print_menu(const std::string menu[], int size) { //функция вывода на экран меню
 	int selected = 0;
 	bool isdone = false;
 	int key = 0;
