@@ -6,21 +6,11 @@
 #include "Search.h"
 
 
-
 int work_menu() {
 	int sel = 1;
 	int isdone = 0;
 
 	std::vector<data> result;
-
-	std::string main_menu[] = {
-	"Выберите файл имен...",
-	"Выберите файл паролей...",
-	"Поиск данных пользователя",
-	"Полный вывод данных в файл",
-	"Инструкция по использованию",
-	"Выход из программы"
-	};
 
 	const int menuSize = sizeof(main_menu) / sizeof(main_menu[0]);
 	
