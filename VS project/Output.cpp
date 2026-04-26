@@ -5,7 +5,7 @@
 #include "Work_with_files.h"
 
 
-int output_menu(const std::vector<data>& vec) {
+int output_menu(const std::vector<data>& vec) { // Функция для вывода данных на экран, принимает массив структур data для вывода
 	const std::string path = R"(C:\Users\I\Desktop\)";
 	std::string save_path = "0";
 	menuopt menu_param[] = {
@@ -34,7 +34,7 @@ int output_menu(const std::vector<data>& vec) {
 	return 0;
 }
 
-int print_menuopt(menuopt menu[], int size){ //функция вывода на экран меню
+int print_menuopt(menuopt menu[], int size){ //функция вывода на экран меню , принимает массив структур menuopt для вывода и его размер
 	static int selected = 0;
 	bool isdone = false;
 	int key = 0;
@@ -99,7 +99,7 @@ int print_menuopt(menuopt menu[], int size){ //функция вывода на экран меню
 	return selected;
 } //Возвращает индекс выбранного пункта меню
 
-int output_to_file(const std::vector<data>& vec, menuopt menu[]) {
+int output_to_file(const std::vector<data>& vec, menuopt menu[]) { // Функция для вывода данных в файл, принимает массив стру
 	std::vector<data> final_data = vec;
 	if (menu[only_full].param == 1) { // Выводить только полностью заполненные поля
 		final_data = filter_data(final_data);

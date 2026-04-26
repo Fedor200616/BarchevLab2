@@ -67,7 +67,7 @@ int SaveToCSV(const std::vector<data>& vec, fs::path save_path); // Функция для 
 /// Функция для фильтрации данных
 /// </summary>
 /// <param name="vec">Вектор данных для фильтрации</param>
-/// <returns></returns>
+/// <returns>отфильтрованный массив</returns>
 std::vector<data> filter_data(const std::vector<data>& vec); // Функция для фильтрации данных, принимает массив структур data для фильтрации и возвращает отфильтрованный массив
 
 #endif

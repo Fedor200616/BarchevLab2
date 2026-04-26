@@ -1,4 +1,12 @@
 ﻿  General_func.cpp
-C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(116,34): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(116,21): warning C4267: инициализация: преобразование из "size_t" в "const int"; возможна потеря данных
-LINK : fatal error LNK1104: не удается открыть файл "C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\x64\Release\Laba2.exe"
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(101,34): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\General_func.cpp(101,21): warning C4267: инициализация: преобразование из "size_t" в "const int"; возможна потеря данных
+  Main.cpp
+  Output.cpp
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Output.cpp(128,2): warning C4809: в операторе switch имеется ненужная метка "default"; все возможные метки "case" уже заданы
+  Search.cpp
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Search.cpp(94,7): error C3861: search_name: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Search.cpp(94,30): error C3861: search_pass: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Search.cpp(94,53): error C3861: search_group: идентификатор не найден
+C:\Users\I\source\repos\Fedor200616\BarchevLab2\VS project\Search.cpp(94,77): error C3861: search_number: идентификатор не найден
+  Work_with_files.cpp

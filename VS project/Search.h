@@ -52,6 +52,13 @@ int print_search_res(const std::vector<data>& search_result);
 int search_name(data d, std::string str);
 int search_pass(data d, std::string str);
 int search_group(data d, std::string str);
+
+/// <summary>  
+/// Функция для поиска совпадений в номере  
+/// </summary>  
+/// <param name="d">Структура данных пользователя</param>  
+/// <param name="str">Строка поиска</param>  
+/// <returns>1, если найдено совпадение, иначе 0</returns>
 int search_number(data d, std::string str);
 
 /// <summary>

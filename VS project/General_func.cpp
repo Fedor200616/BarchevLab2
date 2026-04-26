@@ -6,7 +6,7 @@
 #include "Search.h"
 
 
-int work_menu() {
+int work_menu() { //Обрабатываем запросы пользователя
 	int sel = 1;
 	int isdone = 0;
 
@@ -97,22 +97,7 @@ int work_menu() {
 	return sel;
 }
 
-int inop_funct() {
-	system("cls");
-	std::cout << "Разработчик уже работает над этой функцией и она появится позже\n";
-	for (int i = 0; i < 25; i++) {
-		for (int j = 0; j < 20; j++) {
-			std::cout << "INOP ";
-		}
-		std::cout << '\n';
-	}
-	std::cout << "Нажмите любую кнопку чтобы продолжить\n";
-	_getch();
-	return 0;
-
-}
-
-int print_arr(const std::vector<data>& vec, std::string sep, int strnum, int keysel) {
+int print_arr(const std::vector<data>& vec, std::string sep, int strnum, int keysel) { // Печатаем массив структур data на экран
 	const int list_num = vec.size() / arr_num;
 	int page_num = 0;
 	bool isdone = false;

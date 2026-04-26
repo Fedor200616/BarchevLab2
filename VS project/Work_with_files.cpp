@@ -4,7 +4,7 @@
 #include "Output.h"
 
 
-std::vector<data> fillData(fs::path secname, fs::path password) {
+std::vector<data> fillData(fs::path secname, fs::path password) { // Функция обьединяет файлы в массив структур data
     std::ifstream sfile(secname);
     std::ifstream pfile(password);
 
@@ -23,7 +23,6 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
     int i = 0;
     while (std::getline(sfile, str_buf)) {
         data d_buf = {"", "", "", "" };
-        int d_type = 0;
         //bool secondvert = false; // Маркер что | уже была, и после нее чтоит еще одна, нужен для перехода на след строку в этом случае
         bool endofstring = false;
         int wordnum = 0;
@@ -35,24 +34,21 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
                 wordnum++;
             }
             else {
-                switch (d_type){
-                case 0:
+                switch (wordnum){
+                case 1:
                     d_buf.name = word_buf;
                     break;
-                case 1:
-                    d_buf.group = word_buf; //Тут получается что при отсуствии имении - группа будет писаться вместо него, стоит исправить
-                    break;
                 case 2:
+                    d_buf.group = word_buf;
+                    break;
+                case 3:
                     d_buf.number = word_buf;
                     break;
                 default:
-                    endofstring = true;
                     break;
                 }
-                d_type++;
-                wordnum++;
             }
-            if (wordnum >= 7) {
+            if (wordnum >= 9) {
                 endofstring = true;
             }
 
@@ -65,7 +61,6 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
     
     while (std::getline(pfile, str_buf)) { //Повторяем с паролем
         data d_buf = {"", "", "", "" };
-        int d_type = 0;
 
         bool endofstring = false;
         int wordnum = 0;
@@ -78,22 +73,19 @@ std::vector<data> fillData(fs::path secname, fs::path password) {
                 wordnum++;
             }
             else {
-                switch(d_type) {
-                case 0:
+                switch(wordnum) {
+                case 1:
                     d_buf.pass = word_buf;
                     break;
-                case 1:
+                case 2:
                     d_buf.group = word_buf; 
                     break;
-                case 2:
+                case 3:
                     d_buf.number = word_buf;
                     break;
                 default:
-                    endofstring = true;
                     break;
                 }
-                d_type++;
-                wordnum++;
             }
         }
         compare(result, d_buf); //сравнивает структуру с полем
@@ -133,8 +125,12 @@ fs::path OpenFileDialog() {  // Вызов диалоговго окна выб�
     }  
 }
 
-int compare(std::vector<data>& vec, data d) {
+int compare(std::vector<data>& vec, data d) { //Функция для вставки данных паролей в массив всех данных
 	int is_inserted = 0;
+	if (d.group == "" || d.number == "") {
+		vec.push_back(d); // Если группа или номер пустые, добавляем эту запись как есть, так как она может быть из другого файла и может быть дополняющейs
+		return 0; // Если группа или номер пустые, не обрабатываем эту запись
+	}
     for(int i = 0; i < vec.size(); i++) {
 		if (vec[i].group == d.group && vec[i].number == d.number) {
 			vec[i].pass = d.pass;

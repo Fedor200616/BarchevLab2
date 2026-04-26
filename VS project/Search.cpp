@@ -5,7 +5,7 @@
 #include "Work_with_files.h"
 #include "Search.h"
 
-int main_search(const std::vector<data>& vec) {
+int main_search(const std::vector<data>& vec) { // Функция для поиска данных пользователя, принимает массив структур data для поиска
 	std::string search_str = "";
 	std::vector<data> search_result = vec;
 	int done = 0;
@@ -39,7 +39,7 @@ int main_search(const std::vector<data>& vec) {
 	return done;
 }
 
-int print_menuopt(const std::vector<data>& search_result, std::string search_str) {
+int print_menuopt(const std::vector<data>& search_result, std::string search_str) { // Функция для вывода на экран меню, принимает массив структур data для вывода и строку для поиска
 	static int selected = 0;
 
 	system("cls");
@@ -73,8 +73,7 @@ int print_menuopt(const std::vector<data>& search_result, std::string search_str
 	return have_res;
 }
 
-int ftype = 0; //тип поля для поиска
-std::string key_analyse(std::string search_str, int key) {
+std::string key_analyse(std::string search_str, int key) { // Функция для анализа нажатых клавиш, принимает строку для поиска и код нажатой клавиши, возвращает измененную строку для поиска
 	if (key == 8) { // Backspace
 		if (!search_str.empty()) {
 			search_str.pop_back();
@@ -86,7 +85,7 @@ std::string key_analyse(std::string search_str, int key) {
 	return std::string(search_str.begin(), search_str.end());
 }
 
-std::vector<data> search(const std::vector<data>& vec, std::string str) {
+std::vector<data> search(const std::vector<data>& vec, std::string str) { // Функция для поиска данных, принимает массив структур data для поиска и строку для поиска, возвращает количество найденных совпадений
 	std::vector<data> search_result;
 	int search_num = 0;
 	
@@ -108,6 +107,7 @@ int print_search_res(const std::vector<data>& search_result) { //Функция вывода 
 	return 0;
 }
 
+// служебные функции для поиска совпадения в отедльной строке
 int search_name(data d, std::string str) {
 	if (str.size() > d.name.size()) {
 		return 0;
@@ -149,7 +149,8 @@ int search_number(data d, std::string str) {
 	return 4;
 }
 
-int separator() {
+int separator() { // Функция вывода на экран разделителя
 	std::string sep = "====================================================================\n";
 	std::cout << sep;
+	return 0;
 }
