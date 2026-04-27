@@ -131,9 +131,9 @@ int compare(std::vector<data>& vec, data d) { //Функция для встав
 		vec.push_back(d); // Если группа или номер пустые, добавляем эту запись как есть, так как она может быть из другого файла и может быть дополняющейs
 		return 0; // Если группа или номер пустые, не обрабатываем эту запись
 	}
-    for(int i = 0; i < vec.size(); i++) {
-		if (vec[i].group == d.group && vec[i].number == d.number) {
-			vec[i].pass = d.pass;
+    for(auto x : vec) {
+		if (x.group == d.group && x.number == d.number) {
+			x.pass = d.pass;
 			is_inserted = 1;
 		}
     }
