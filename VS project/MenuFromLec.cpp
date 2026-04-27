@@ -23,5 +23,29 @@ void show_menu(const string menu1[], int num, int active){
         cout << menu1[i] << '\n';
     }
     
-    
+}
+
+int main(){
+    int n = 0;
+    char ch;
+    do{
+        system("cls");
+        show_menu(menu1, m1, n);
+        ch = getch();
+        // ISO 646 Превращается в кирилицу
+        if (ch == 72){
+            n--;
+            if(n < 0) n = m1 - 1;
+        }
+        if (ch = 80){
+            n++;
+            if (n > m1 + 1) n = 0;
+        }
+        /* Компактная запись
+        if(ch = 72) n--;
+        if(ch = 80) n++;
+        n = (n + m1) % m1;
+        */
+    }
+    while(ch != 13 || ch != 27)
 }
