@@ -76,7 +76,7 @@ int work_menu() { //Обрабатываем запросы пользователя
 				_getch();
 			}
 			break;
-		case 4: // TODO инструкция
+		case 4: 
 			instruction();
 			break;
 		default:

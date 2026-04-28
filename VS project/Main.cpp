@@ -18,7 +18,7 @@ int main()
 int print_menu(const std::string menu[], int size) { //функция вывода на экран меню
 	int selected = 0;
 	bool isdone = false;
-	using char key = 0;
+	unsigned char key = 0;
 
 	while (!isdone) {
 		system("cls");

@@ -100,8 +100,8 @@ std::vector<data> search(const std::vector<data>& vec, std::string str) { // Фун
 }
 
 int print_search_res(const std::vector<data>& search_result) { //Функция вывода результатов поиска на ЭКРАН ПОИСКА
-	for (int i = 0; i < search_result.size(); i++) {
-		std::cout << search_result[i].name << " " << search_result[i].group << '\n';
+	for (auto i : search_result) {
+		std::cout << i.name << " " << i.group << '\n';
 	}
 	separator();
 	return 0;
@@ -112,8 +112,8 @@ int search_name(data d, std::string str) {
 	if (str.size() > d.name.size()) {
 		return 0;
 	}
-	for (int i = 0; i < str.size(); i++) {
-		if (!(str[i] == d.name[i]))
+	for (auto i : str) {
+		if (!(i == d.name[i]))
 			return 0;
 	}
 	return 1;
@@ -122,8 +122,8 @@ int search_pass(data d, std::string str) {
 	if (str.size() > d.name.size()) {
 		return 0;
 	}
-	for (int i = 0; i < str.size(); i++) {
-		if (!(str[i] == d.pass[i]))
+	for (auto i : str) {
+		if (!(i == d.pass[i]))
 			return 0;
 	}
 	return 2;
@@ -132,8 +132,8 @@ int search_group(data d, std::string str) {
 	if (str.size() > d.name.size()) {
 		return 0;
 	}
-	for (int i = 0; i < str.size(); i++) {
-		if (!(str[i] == d.group[i]))
+	for (auto i : str) {
+		if (!(i == d.group[i]))
 			return 0;
 	}
 	return 3;
@@ -142,8 +142,8 @@ int search_number(data d, std::string str) {
 	if (str.size() > d.name.size()) {
 		return 0;
 	}
-	for (int i = 0; i < str.size(); i++) {
-		if (!(str[i] == d.number[i]))
+	for (auto i : str) {
+		if (!(i == d.number[i]))
 			return 0;
 	}
 	return 4;
