@@ -27,7 +27,7 @@ std::vector<data> fillData(fs::path secname, fs::path password) { // Функц�
         bool endofstring = false;
         int wordnum = 0;
 
-        std::istringstream iss(str_buf); // 
+        std::istringstream iss(str_buf); // .
         std::string word_buf;
         while (iss >> word_buf && !endofstring) { //Запишем имена группы и номера в структуру
             if (word_buf == "|") {
