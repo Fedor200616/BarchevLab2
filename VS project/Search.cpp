@@ -88,7 +88,7 @@ std::string key_analyse(std::string search_str, int key) { // Функция для анализ
 std::vector<data> search(const std::vector<data>& vec, std::string str) { // Функция для поиска данных, принимает массив структур data для поиска и строку для поиска, возвращает количество найденных совпадений
 	std::vector<data> search_result;
 	int search_num = 0;
-	
+
 	for (const auto& d : vec) {
 		int istrue[4] = { 0 };
 		if (search_name(d, str) || search_pass(d, str) || search_group(d, str) || search_number(d, str)) {
@@ -113,7 +113,7 @@ int search_name(data d, std::string str) {
 		return 0;
 	}
 	for (int i = 0; i < str.size(); i++) {
-		if (!(str[i] == d.name[i]))
+		if (!((str[i] == d.name[i]) || (str[i] == d.name[i] + chardiff) || str[i] == d.name[i] - chardiff))
 			return 0;
 	}
 	return 1;
