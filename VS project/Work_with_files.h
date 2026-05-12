@@ -10,11 +10,10 @@
 #include "main.h"
 #include "Output.h"
 
+namespace fs = std::filesystem;
 
 #ifndef FILESYS_H
 #define FILESYS_H
-
-namespace fs = std::filesystem;
 
 /// <summary>
 /// Функция обьединяет файлы в массив структур
@@ -27,8 +26,9 @@ std::vector<data> fillData(fs::path secname, fs::path password); // Функция обье
 /// <summary>
 /// Фунция высвечивает диалоговое окно проводника для выбора файла для открытия
 /// </summary>
+/// <param name="filetype">Тип файла:  1 - имя, 2 - пароль</param>
 /// <returns>Путь к выбранному файлу</returns>
-fs::path OpenFileDialog(); // Фунция высвечивает диалоговое окно проводника для выбора файла
+fs::path OpenFileDialog(const int filetype); // Фунция высвечивает диалоговое окно проводника для выбора файла
 
 /// <summary>
 /// Функция для вставки данных паролей в массив всех данных
@@ -44,5 +44,24 @@ int compare(std::vector<data>& vec, data d); //Функция для вставки данных пароле
 /// <param name="file_type">Расширение файла</param>
 /// <returns>Путь к выбранному файлу</returns>
 fs::path SaveFileDialog(int file_type); // Фунция высвечивает диалоговое окно проводника для выбора файла
+
+/// <summary>
+/// Проверяем файл фамилий или паролей ли это, открывается ли он, соответсвие по крайней мере первой строки формату
+/// </summary>
+/// <param name="file">Путь к файлу</param>
+/// <param name="filetype">Тип файла:  1 - имя, 2 - пароль</param>
+/// <returns>1 если файл соответсвует требованиям,
+/// 0 файл другого формата, но открывается и содержит приемлемые символы в первой строке,
+///	-1 если файл не открывается,
+/// -2 если число | в первой строке не соответствует формату,
+/// -3 файл пустой либо не найдено валидныдных символов.
+/// </returns>
+int is_valid_file(fs::path file, int filetype);
+
+/// <summary>
+/// Функция изменяет пустое поле на поле Нет данных
+/// </summary>
+/// <param name="result">Вектор данных пользователей</param>
+void AdNodata(std::vector<data>& result);
 
 #endif

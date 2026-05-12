@@ -30,30 +30,40 @@ int work_menu() { //Обрабатываем запросы пользователя
 	while (!isdone) {
 		sel = 1;
 		int namechanged = 0; //флаг смены имени какого либо из файлов
-		
-		
+
+
 		sel = print_menu(main_menu, menuSize);
 		switch (sel)
 		{
-		case 0: 
+		case 0:
 			system("cls");
 			std::cout << "Выберите файл фамилий во всплывающем окне \n";
-			secname_file = OpenFileDialog();
+			secname_file = OpenFileDialog(1);
 			if (secname_file != "0") {
 				main_menu[0] = std::string("Выбран файл имен ") + secname_file.string();
 				namechanged = 1;
 			}
-
+			else {
+				main_menu[0] = "Выберите файл имен...";
+				namechanged = 0;
+				result.clear();
+			}
 			break;
 		case 1:
 			system("cls");
 			std::cout << "Выберите файл паролей во всплывающем окне \n";
-			password_file = OpenFileDialog();
+			password_file = OpenFileDialog(2);
 			if (password_file != "0") {
 				main_menu[1] = std::string("Выбран файл паролей ") + password_file.string();
 				namechanged = 1;
 			}
+			else {
+				main_menu[1] = "Выберите файл паролей...";
+				namechanged = 0;
+				result.clear();
+			}
 			break;
+
 		case 2:
 			if (!result.empty()) {
 				main_search(result);
