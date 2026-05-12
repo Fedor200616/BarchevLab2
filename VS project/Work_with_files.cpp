@@ -176,7 +176,7 @@ fs::path SaveFileDialog(int file_type) {  // Вызов диалоговго о�
     ofn.lpstrInitialDir = root.c_str();
     ofn.Flags = OFN_DONTADDTORECENT | OFN_OVERWRITEPROMPT;
 
-    if (GetOpenFileNameW(&ofn)) {
+    if (GetSaveFileNameW(&ofn)) {
         //std::cout << "Сохраняем в: " << filename << "\n";
         return fs::path(filename);
     }
