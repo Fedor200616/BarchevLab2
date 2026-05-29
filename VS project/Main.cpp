@@ -1,4 +1,4 @@
-п»ї#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 #include "Main.h"
 #include "General_func.h"
 #include "Work_with_files.h"
@@ -7,15 +7,15 @@
 
 int main()
 {
-    SetConsoleCP(1251);       // РІС…РѕРґРЅР°СЏ РєРѕРґРёСЂРѕРІРєР°
-    SetConsoleOutputCP(1251); // РІС‹С…РѕРґРЅР°СЏ РєРѕРґРёСЂРѕРІРєР°
+    SetConsoleCP(1251);       // входная кодировка
+    SetConsoleOutputCP(1251); // выходная кодировка
     setlocale(LC_ALL, "");
     work_menu();
 
     return 0;
 }
 
-int print_menu(const std::string menu[], int size) { //С„СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РЅР° СЌРєСЂР°РЅ РјРµРЅСЋ
+int print_menu(const std::string menu[], int size) { //функция вывода на экран меню
 	int selected = 0;
 	bool isdone = false;
 	int key = 0;
@@ -30,13 +30,13 @@ int print_menu(const std::string menu[], int size) { //С„СѓРЅРєС†РёСЏ РІС‹РІРѕРґ
 				std::cout << "    " << menu[i] << '\n';
 			}
 		}
-
+		
 		key = _getch();
 		if (key == 224)
 		{
 			key = _getch();
 
-			if (key == 72) { // РЎС‚СЂРµР»РєР° РІРІРµСЂС…
+			if (key == 72) { // Стрелка вверх
 				if (selected != 0) {
 					selected--;
 				}
@@ -44,7 +44,7 @@ int print_menu(const std::string menu[], int size) { //С„СѓРЅРєС†РёСЏ РІС‹РІРѕРґ
 					selected = size - 1;
 
 			}
-			else if (key == 80) { // СЃС‚СЂРµР»РєР° РІРЅРёР·
+			else if (key == 80) { // стрелка вниз
 				if (selected != (size - 1)) {
 					selected++;
 				}
